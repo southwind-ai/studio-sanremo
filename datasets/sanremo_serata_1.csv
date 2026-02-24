@@ -1,31 +1,31 @@
 artista,brano,reddit_mentions,reddit_score,reddit_comments,sentiment_score,sentiment_label
-Raf,Ora e per sempre,14,98,471,0.932,positivo
-Sal Da Vinci,Per sempre sì,12,93,205,0.967,positivo
-Ermal Meta,Stella stellina,11,446,421,0.965,positivo
-Francesco Renga,Il meglio di me,10,44,355,0.903,positivo
-Dargen D'Amico,Ai Ai,9,46,115,0.966,positivo
-Bambole di pezza,Resta con me,9,41,360,1.0,positivo
+Raf,Ora e per sempre,14,95,471,0.932,positivo
+Sal Da Vinci,Per sempre sì,12,94,205,0.967,positivo
+Ermal Meta,Stella stellina,11,451,421,0.965,positivo
+Francesco Renga,Il meglio di me,10,43,355,0.903,positivo
+Dargen D'Amico,Ai Ai,9,47,115,0.966,positivo
 Tommaso Paradiso,I romantici,9,41,105,0.917,positivo
-Arisa,Magica favola,9,40,116,1.0,positivo
-Fedez e Marco Masini,Male necessario,9,38,104,0.934,positivo
-Levante,Sei tu,8,451,453,1.0,positivo
-Serena Brancale,Qui con me,8,53,108,1.0,positivo
-Nayt,Prima che,8,52,88,0.895,positivo
-J-Ax,Italia Starter Pack,8,40,89,1.0,positivo
-Michele Bravi,Prima o poi,8,39,74,1.0,positivo
-Elettra Lamborghini,Voilà,8,36,99,0.933,positivo
-Patty Pravo,Opera,8,33,98,1.0,positivo
-Chiello,Ti penso sempre,8,30,84,0.895,positivo
+Arisa,Magica favola,9,39,116,1.0,positivo
+Bambole di pezza,Resta con me,9,39,360,1.0,positivo
+Fedez e Marco Masini,Male necessario,9,36,104,0.934,positivo
+Levante,Sei tu,8,452,453,1.0,positivo
+Serena Brancale,Qui con me,8,51,108,1.0,positivo
+Nayt,Prima che,8,50,88,0.895,positivo
+J-Ax,Italia Starter Pack,8,39,89,1.0,positivo
+Michele Bravi,Prima o poi,8,38,74,1.0,positivo
+Elettra Lamborghini,Voilà,8,33,99,0.933,positivo
+Patty Pravo,Opera,8,32,98,1.0,positivo
+Chiello,Ti penso sempre,8,28,84,0.895,positivo
 Tredici Pietro,Uomo che cade,7,65,216,1.0,positivo
-Ditonellapiaga,Che fastidio!,7,33,86,1.0,positivo
-Fulminacci,Stupida sfortuna,7,33,86,1.0,positivo
-Malika Ayane,Animali notturni,7,33,86,1.0,positivo
-Maria Antonietta e Colombre,La felicità e basta,7,33,86,1.0,positivo
-Eddie Brock,Avvoltoi,7,30,74,1.0,positivo
-Leo Gassmann,Naturale,7,30,74,1.0,positivo
-Mara Sattei,Le cose che non sai di me,7,30,74,1.0,positivo
+Ditonellapiaga,Che fastidio!,7,31,86,1.0,positivo
+Fulminacci,Stupida sfortuna,7,31,86,1.0,positivo
+Malika Ayane,Animali notturni,7,31,86,1.0,positivo
+Maria Antonietta e Colombre,La felicità e basta,7,31,86,1.0,positivo
+Eddie Brock,Avvoltoi,7,29,74,1.0,positivo
+Leo Gassmann,Naturale,7,29,74,1.0,positivo
+Mara Sattei,Le cose che non sai di me,7,29,74,1.0,positivo
 Luchè,Labirinto,7,28,93,1.0,positivo
 Sayf,Tu mi piaci tanto,7,28,93,1.0,positivo
-Enrico Nigiotti,Ogni volta che non so volare,6,23,71,0.895,positivo
-LDA e AKA 7even,Poesie clandestine,6,23,71,1.0,positivo
-Samurai Jay,Ossessione,6,23,71,1.0,positivo
+Enrico Nigiotti,Ogni volta che non so volare,6,21,71,0.895,positivo
+LDA e AKA 7even,Poesie clandestine,6,21,71,1.0,positivo
+Samurai Jay,Ossessione,6,21,71,1.0,positivo
