@@ -83,7 +83,7 @@ def fetch_spotify_data(artist, song, token):
     params = {
         "q": query,
         "type": "track",
-        "limit": 1,
+        "limit": 5,  # Fetch several results to pick the most popular version
         "market": "IT"
     }
     
@@ -98,8 +98,12 @@ def fetch_spotify_data(artist, song, token):
         data = response.json()
         
         if data.get("tracks", {}).get("items"):
-            track = data["tracks"]["items"][0]
-            return track.get("popularity", 0)
+            tracks = data["tracks"]["items"]
+            # Pick the track with the highest popularity score.
+            # This avoids picking a recently-uploaded / low-popularity version
+            # that Spotify may rank first in the search results.
+            best_track = max(tracks, key=lambda t: t.get("popularity", 0))
+            return best_track.get("popularity", 0)
         return None
     except Exception as e:
         print(f"  Error fetching Spotify data for {artist} - {song}: {e}")
