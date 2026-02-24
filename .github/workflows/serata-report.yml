@@ -1,0 +1,79 @@
+name: Sanremo Serata Report
+
+on:
+  workflow_dispatch:
+    inputs:
+      serata:
+        description: 'Numero della serata (1-5)'
+        required: true
+        type: choice
+        options:
+          - '1'
+          - '2'
+          - '3'
+          - '4'
+          - '5'
+
+permissions:
+  contents: write
+
+jobs:
+  generate-report:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+        fetch-depth: 0
+    
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.11'
+        cache: 'pip'
+    
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+    
+    - name: Configure Git
+      run: |
+        git config --local user.email "github-actions[bot]@users.noreply.github.com"
+        git config --local user.name "github-actions[bot]"
+    
+    - name: Run pipeline for serata
+      working-directory: sanremo
+      env:
+        SPOTIFY_CLIENT_ID: ${{ secrets.SPOTIFY_CLIENT_ID }}
+        SPOTIFY_CLIENT_SECRET: ${{ secrets.SPOTIFY_CLIENT_SECRET }}
+        YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+        API_KEY: ${{ secrets.API_KEY }}
+        SERATA: ${{ inputs.serata }}
+      run: |
+        python src/report/pipeline.py
+    
+    - name: Build static site
+      working-directory: sanremo
+      env:
+        API_KEY: ${{ secrets.API_KEY }}
+        API_BASE: https://app.southwind.ai/api
+      run: |
+        # Get the report ID from the file created by the pipeline
+        if [ -f report_id.txt ]; then
+          export NEW_REPORT_ID=$(cat report_id.txt)
+          echo "Building site and waiting for report: $NEW_REPORT_ID"
+        else
+          echo "Building site with existing reports"
+        fi
+        python src/site/build_site.py
+    
+    - name: Commit and push static site
+      working-directory: sanremo
+      run: |
+        git add src/site/index.html datasets/
+        git diff --staged --quiet || git commit -m "Update Sanremo report for serata ${{ inputs.serata }}"
+        git push
+
