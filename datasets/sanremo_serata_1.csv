@@ -1,0 +1,31 @@
+artista,brano,reddit_mentions,reddit_score,reddit_comments,sentiment_score,sentiment_label
+Raf,Ora e per sempre,14,101,471,0.932,positivo
+Sal Da Vinci,Per sempre sì,12,100,205,0.967,positivo
+Ermal Meta,Stella stellina,11,457,421,0.965,positivo
+Francesco Renga,Il meglio di me,10,49,355,0.903,positivo
+Dargen D'Amico,Ai Ai,9,52,115,0.966,positivo
+Bambole di pezza,Resta con me,9,46,360,1.0,positivo
+Tommaso Paradiso,I romantici,9,46,105,0.917,positivo
+Arisa,Magica favola,9,44,116,1.0,positivo
+Fedez e Marco Masini,Male necessario,9,42,104,0.934,positivo
+Levante,Sei tu,8,458,453,1.0,positivo
+Serena Brancale,Qui con me,8,56,108,1.0,positivo
+Nayt,Prima che,8,53,88,0.895,positivo
+J-Ax,Italia Starter Pack,8,44,89,1.0,positivo
+Michele Bravi,Prima o poi,8,43,74,1.0,positivo
+Elettra Lamborghini,Voilà,8,39,99,0.933,positivo
+Patty Pravo,Opera,8,37,98,1.0,positivo
+Chiello,Ti penso sempre,8,32,84,0.895,positivo
+Tredici Pietro,Uomo che cade,7,71,216,1.0,positivo
+Ditonellapiaga,Che fastidio!,7,36,86,1.0,positivo
+Fulminacci,Stupida sfortuna,7,36,86,1.0,positivo
+Malika Ayane,Animali notturni,7,36,86,1.0,positivo
+Maria Antonietta e Colombre,La felicità e basta,7,36,86,1.0,positivo
+Eddie Brock,Avvoltoi,7,34,74,1.0,positivo
+Leo Gassmann,Naturale,7,34,74,1.0,positivo
+Mara Sattei,Le cose che non sai di me,7,34,74,1.0,positivo
+Luchè,Labirinto,7,33,93,1.0,positivo
+Sayf,Tu mi piaci tanto,7,33,93,1.0,positivo
+Enrico Nigiotti,Ogni volta che non so volare,6,26,71,0.895,positivo
+LDA e AKA 7even,Poesie clandestine,6,26,71,1.0,positivo
+Samurai Jay,Ossessione,6,26,71,1.0,positivo
