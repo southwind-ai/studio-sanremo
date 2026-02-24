@@ -13,7 +13,7 @@ load_dotenv()
 API_BASE = os.getenv("API_BASE", "https://app.southwind.ai/api")
 API_KEY = os.getenv("API_KEY", "")
 
-GITHUB_RAW_BASE = "https://raw.githubusercontent.com/southwind-ai/studio-regione-lombardia/refs/heads/main/sanremo/"
+GITHUB_RAW_BASE = "https://raw.githubusercontent.com/southwind-ai/studio-sanremo/refs/heads/main/"
 
 REPORT_MAX_RETRIES = 3
 REPORT_BACKOFF_FACTOR = 2  # waits 2, 4, 8, 16... seconds between retries
@@ -118,16 +118,24 @@ def create_report(data_source_id, serata):
     if API_KEY:
         headers["X-API-Key"] = API_KEY
     
-    prompt = f"""Analizza i dati di streaming e popolarità dei brani in gara al Festival di Sanremo 2026 per la serata {serata}.
-    
-Analizza:
-- La popolarità su Spotify di ogni brano
-- Le visualizzazioni, like e commenti su YouTube
-- Identifica tendenze e pattern interessanti
-- Fai una previsione su quale artista potrebbe vincere basandoti sui dati di popolarità e engagement
-- Fornisci insight su quali brani stanno performando meglio sui diversi platform
+    prompt = f"""Analizza i dati di discussione Reddit relativi al Festival di Sanremo 2026 per la serata {serata}.
 
-Il report deve essere leggibile, ricco di contesto e insight, e deve aiutare a capire chi sta dominando il festival secondo i dati."""
+I dati provengono dai subreddit r/italy e r/italyMusic e contengono, per ogni artista in gara:
+- reddit_mentions: quante volte l'artista viene menzionato in post e commenti
+- reddit_score: somma degli upvote dei post in cui l'artista è citato (proxy di rilevanza/gradimento)
+- reddit_comments: numero totale di commenti nei thread in cui appare l'artista
+- sentiment_score: punteggio di sentiment testuale da -1.0 (molto negativo) a +1.0 (molto positivo)
+- sentiment_label: etichetta sintetica (positivo / neutro / negativo)
+
+Analizza:
+- Chi è l'artista più discusso e perché potrebbe essere così
+- La relazione tra volume di discussione (mentions + comments) e sentiment
+- Quali artisti polarizzano di più l'opinione pubblica online
+- Chi ha il sentiment più positivo e chi il più negativo, con possibili interpretazioni
+- Eventuali pattern interessanti o sorprese rispetto alle aspettative
+- Una previsione su chi potrebbe vincere o fare meglio secondo la "voce del pubblico" Reddit
+
+Il report deve essere in italiano, narrativo e ricco di insight, pensato per un lettore curioso di musica e cultura pop italiana."""
     
     response = requests.post(
         f"{API_BASE}/v1/reports/",
@@ -141,7 +149,7 @@ Il report deve essere leggibile, ricco di contesto e insight, e deve aiutare a c
                 "dataset_info": "",
                 "data_provenance": False,
             },
-            "improve_prompt": True,
+            "improve_prompt": False,
         },
     )
 
