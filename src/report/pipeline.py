@@ -149,7 +149,7 @@ Il report deve essere comprensibile anche a un lettore non tecnico."""
                 "dataset_info": "",
                 "data_provenance": False,
             },
-            "improve_prompt": False,
+            "improve_prompt": True,
         },
     )
 
