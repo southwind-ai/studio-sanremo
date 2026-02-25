@@ -1,31 +1,2848 @@
-artista,brano,reddit_mentions,reddit_score,reddit_comments,sentiment_score,sentiment_label
-Raf,Ora e per sempre,14,101,471,0.932,positivo
-Sal Da Vinci,Per sempre sì,12,100,205,0.967,positivo
-Ermal Meta,Stella stellina,11,457,421,0.965,positivo
-Francesco Renga,Il meglio di me,10,49,355,0.903,positivo
-Dargen D'Amico,Ai Ai,9,52,115,0.966,positivo
-Bambole di pezza,Resta con me,9,46,360,1.0,positivo
-Tommaso Paradiso,I romantici,9,46,105,0.917,positivo
-Arisa,Magica favola,9,44,116,1.0,positivo
-Fedez e Marco Masini,Male necessario,9,42,104,0.934,positivo
-Levante,Sei tu,8,458,453,1.0,positivo
-Serena Brancale,Qui con me,8,56,108,1.0,positivo
-Nayt,Prima che,8,53,88,0.895,positivo
-J-Ax,Italia Starter Pack,8,44,89,1.0,positivo
-Michele Bravi,Prima o poi,8,43,74,1.0,positivo
-Elettra Lamborghini,Voilà,8,39,99,0.933,positivo
-Patty Pravo,Opera,8,37,98,1.0,positivo
-Chiello,Ti penso sempre,8,32,84,0.895,positivo
-Tredici Pietro,Uomo che cade,7,71,216,1.0,positivo
-Ditonellapiaga,Che fastidio!,7,36,86,1.0,positivo
-Fulminacci,Stupida sfortuna,7,36,86,1.0,positivo
-Malika Ayane,Animali notturni,7,36,86,1.0,positivo
-Maria Antonietta e Colombre,La felicità e basta,7,36,86,1.0,positivo
-Eddie Brock,Avvoltoi,7,34,74,1.0,positivo
-Leo Gassmann,Naturale,7,34,74,1.0,positivo
-Mara Sattei,Le cose che non sai di me,7,34,74,1.0,positivo
-Luchè,Labirinto,7,33,93,1.0,positivo
-Sayf,Tu mi piaci tanto,7,33,93,1.0,positivo
-Enrico Nigiotti,Ogni volta che non so volare,6,26,71,0.895,positivo
-LDA e AKA 7even,Poesie clandestine,6,26,71,1.0,positivo
-Samurai Jay,Ossessione,6,26,71,1.0,positivo
+artista,brano,reddit_mentions,reddit_score,reddit_comments,sentiment_score,sentiment_label,top_comments
+Sayf,Tu mi piaci tanto,5,125,5460,1.0,positivo,"SAYF
+
+https://preview.redd.it/68tf9ump2ilg1.jpeg?width=1200&amp;format=pjpg&amp;auto=webp&amp;s=c792c3b5f4a8109dfab4762f5d53d7a292f5f511 || Both Dargen and Sayf's are the songs I'm most looking forward to, so I'm shooketh if this turns out right lmao || #🏆 LA CLASSIFICA DEL SUB  
+
+**MIGLIOR CANZONE**
+
+|Posizione|Partecipante|Punteggio|
+|:-|:-|:-|
+|🥇| · Dito nella piaga|5777|
+|🥈| · Fulminacci|3747|
+|🥉| · Maria Antonietta &amp; Colombre|3667|
+|4| · Malika Ayane|3307|
+|5| · Levante|2200|
+|6| · Dargen D'Amico|1953|
+|7| · Bambole di Pezza|1903|
+|8| · Tredici Pietro|1703|
+|9| · Sal Da Vinci|1227|
+|10| · Arisa|723|
+|11| · Serena Brancale|583|
+|12| · Sayf|563|
+|13| · Chiello|533|
+|14| · Raf|217|
+|15| · Ermal Meta|27|
+|16| · J-Ax|-103|
+|17| · LDA e AKA 7even|-120|
+|18| · Nayt|-667|
+|19| · Samurai Jay|-1977|
+|20| · Fedez &amp; Masini|-2367|
+|21| · Mara Sattei|-2780|
+|22| · Patty Pravo|-3267|
+|23| · Enrico Nigiotti|-3390|
+|24| · Elettra Lamborghini|-3600|
+|25| · Michele Bravi|-4027|
+|26| · Francesco Renga|-4097|
+|27| · Tommaso Paradiso|-4133|
+|28| · Leo Gassmann|-4333|
+|29| · Luchè|-6490|
+|30| · Eddie Brock|-6520|
+
+---
+
+**MIGLIOR ESIBIZIONE**
+
+|Posizione|Partecipante|Punteggio|
+|:-|:-|:-|
+|🥇| · Dito nella piaga|6083|
+|🥈| · Arisa|4647|
+|🥉| · Levante|4157|
+|4| · Malika Ayane|3663|
+|5| · Maria Antonietta &amp; Colombre|3637|
+|6| · Bambole di Pezza|3467|
+|7| · Fulminacci|3223|
+|8| · Serena Brancale|2540|
+|9| · Dargen D'Amico|2480|
+|10| · Sal Da Vinci|2210|
+|11| · LDA e AKA 7even|2040|
+|12| · J-Ax|1597|
+|13| · Ermal Meta|840|
+|14| · Raf|717|
+|15| · Chiello|-53|
+|16| · Sayf|-757|
+|17| · Elettra Lamborghini|-803|
+|18| · Tredici Pietro|-1017|
+|19| · Mara Sattei|-1083|
+|20| · Nayt|-1250|
+|21| · Samurai Jay|-1320|
+|22| · Patty Pravo|-1633|
+|23| · Fedez &amp; Masini|-1650|
+|24| · Francesco Renga|-2543|
+|25| · Enrico Nigiotti|-3043|
+|26| · Michele Bravi|-3707|
+|27| · Leo Gassmann|-3890|
+|28| · Tommaso Paradiso|-4867|
+|29| · Eddie Brock|-6863|
+|30| · Luchè|-7897|"
+Fedez e Marco Masini,Male necessario,5,122,5462,1.0,positivo,Le voci di Masini e Fedez insieme stanno bene come il salmone e il tiramisù || Mi sembra un allucinazione ma solo 5 anni fa Fedez si vestiva con le felpe supreme leopardate e le ciabatte ora pare sempre un becchino || In che senso Fedez e Masini 16
+Dargen D'Amico,Ai Ai,4,123,5455,1.0,positivo,"Dargen un grande!!! || Both Dargen and Sayf's are the songs I'm most looking forward to, so I'm shooketh if this turns out right lmao || #🏆 LA CLASSIFICA DEL SUB  
+
+**MIGLIOR CANZONE**
+
+|Posizione|Partecipante|Punteggio|
+|:-|:-|:-|
+|🥇| · Dito nella piaga|5777|
+|🥈| · Fulminacci|3747|
+|🥉| · Maria Antonietta &amp; Colombre|3667|
+|4| · Malika Ayane|3307|
+|5| · Levante|2200|
+|6| · Dargen D'Amico|1953|
+|7| · Bambole di Pezza|1903|
+|8| · Tredici Pietro|1703|
+|9| · Sal Da Vinci|1227|
+|10| · Arisa|723|
+|11| · Serena Brancale|583|
+|12| · Sayf|563|
+|13| · Chiello|533|
+|14| · Raf|217|
+|15| · Ermal Meta|27|
+|16| · J-Ax|-103|
+|17| · LDA e AKA 7even|-120|
+|18| · Nayt|-667|
+|19| · Samurai Jay|-1977|
+|20| · Fedez &amp; Masini|-2367|
+|21| · Mara Sattei|-2780|
+|22| · Patty Pravo|-3267|
+|23| · Enrico Nigiotti|-3390|
+|24| · Elettra Lamborghini|-3600|
+|25| · Michele Bravi|-4027|
+|26| · Francesco Renga|-4097|
+|27| · Tommaso Paradiso|-4133|
+|28| · Leo Gassmann|-4333|
+|29| · Luchè|-6490|
+|30| · Eddie Brock|-6520|
+
+---
+
+**MIGLIOR ESIBIZIONE**
+
+|Posizione|Partecipante|Punteggio|
+|:-|:-|:-|
+|🥇| · Dito nella piaga|6083|
+|🥈| · Arisa|4647|
+|🥉| · Levante|4157|
+|4| · Malika Ayane|3663|
+|5| · Maria Antonietta &amp; Colombre|3637|
+|6| · Bambole di Pezza|3467|
+|7| · Fulminacci|3223|
+|8| · Serena Brancale|2540|
+|9| · Dargen D'Amico|2480|
+|10| · Sal Da Vinci|2210|
+|11| · LDA e AKA 7even|2040|
+|12| · J-Ax|1597|
+|13| · Ermal Meta|840|
+|14| · Raf|717|
+|15| · Chiello|-53|
+|16| · Sayf|-757|
+|17| · Elettra Lamborghini|-803|
+|18| · Tredici Pietro|-1017|
+|19| · Mara Sattei|-1083|
+|20| · Nayt|-1250|
+|21| · Samurai Jay|-1320|
+|22| · Patty Pravo|-1633|
+|23| · Fedez &amp; Masini|-1650|
+|24| · Francesco Renga|-2543|
+|25| · Enrico Nigiotti|-3043|
+|26| · Michele Bravi|-3707|
+|27| · Leo Gassmann|-3890|
+|28| · Tommaso Paradiso|-4867|
+|29| · Eddie Brock|-6863|
+|30| · Luchè|-7897|"
+Arisa,Magica favola,4,112,5456,0.857,positivo,"https://preview.redd.it/3alyywbv6ilg1.jpeg?width=768&amp;format=pjpg&amp;auto=webp&amp;s=1ffbb11d2abbda571b1e73fba3b98beb8fe36427
+
+Espressione di Arisa che canta || Arisa bravissima ma la canzone è orrenda!! || #🏆 LA CLASSIFICA DEL SUB  
+
+**MIGLIOR CANZONE**
+
+|Posizione|Partecipante|Punteggio|
+|:-|:-|:-|
+|🥇| · Dito nella piaga|5777|
+|🥈| · Fulminacci|3747|
+|🥉| · Maria Antonietta &amp; Colombre|3667|
+|4| · Malika Ayane|3307|
+|5| · Levante|2200|
+|6| · Dargen D'Amico|1953|
+|7| · Bambole di Pezza|1903|
+|8| · Tredici Pietro|1703|
+|9| · Sal Da Vinci|1227|
+|10| · Arisa|723|
+|11| · Serena Brancale|583|
+|12| · Sayf|563|
+|13| · Chiello|533|
+|14| · Raf|217|
+|15| · Ermal Meta|27|
+|16| · J-Ax|-103|
+|17| · LDA e AKA 7even|-120|
+|18| · Nayt|-667|
+|19| · Samurai Jay|-1977|
+|20| · Fedez &amp; Masini|-2367|
+|21| · Mara Sattei|-2780|
+|22| · Patty Pravo|-3267|
+|23| · Enrico Nigiotti|-3390|
+|24| · Elettra Lamborghini|-3600|
+|25| · Michele Bravi|-4027|
+|26| · Francesco Renga|-4097|
+|27| · Tommaso Paradiso|-4133|
+|28| · Leo Gassmann|-4333|
+|29| · Luchè|-6490|
+|30| · Eddie Brock|-6520|
+
+---
+
+**MIGLIOR ESIBIZIONE**
+
+|Posizione|Partecipante|Punteggio|
+|:-|:-|:-|
+|🥇| · Dito nella piaga|6083|
+|🥈| · Arisa|4647|
+|🥉| · Levante|4157|
+|4| · Malika Ayane|3663|
+|5| · Maria Antonietta &amp; Colombre|3637|
+|6| · Bambole di Pezza|3467|
+|7| · Fulminacci|3223|
+|8| · Serena Brancale|2540|
+|9| · Dargen D'Amico|2480|
+|10| · Sal Da Vinci|2210|
+|11| · LDA e AKA 7even|2040|
+|12| · J-Ax|1597|
+|13| · Ermal Meta|840|
+|14| · Raf|717|
+|15| · Chiello|-53|
+|16| · Sayf|-757|
+|17| · Elettra Lamborghini|-803|
+|18| · Tredici Pietro|-1017|
+|19| · Mara Sattei|-1083|
+|20| · Nayt|-1250|
+|21| · Samurai Jay|-1320|
+|22| · Patty Pravo|-1633|
+|23| · Fedez &amp; Masini|-1650|
+|24| · Francesco Renga|-2543|
+|25| · Enrico Nigiotti|-3043|
+|26| · Michele Bravi|-3707|
+|27| · Leo Gassmann|-3890|
+|28| · Tommaso Paradiso|-4867|
+|29| · Eddie Brock|-6863|
+|30| · Luchè|-7897|"
+Ermal Meta,Stella stellina,4,112,5456,1.0,positivo,"#🏆 LA CLASSIFICA DEL SUB  
+
+**MIGLIOR CANZONE**
+
+|Posizione|Partecipante|Punteggio|
+|:-|:-|:-|
+|🥇| · Dito nella piaga|5777|
+|🥈| · Fulminacci|3747|
+|🥉| · Maria Antonietta &amp; Colombre|3667|
+|4| · Malika Ayane|3307|
+|5| · Levante|2200|
+|6| · Dargen D'Amico|1953|
+|7| · Bambole di Pezza|1903|
+|8| · Tredici Pietro|1703|
+|9| · Sal Da Vinci|1227|
+|10| · Arisa|723|
+|11| · Serena Brancale|583|
+|12| · Sayf|563|
+|13| · Chiello|533|
+|14| · Raf|217|
+|15| · Ermal Meta|27|
+|16| · J-Ax|-103|
+|17| · LDA e AKA 7even|-120|
+|18| · Nayt|-667|
+|19| · Samurai Jay|-1977|
+|20| · Fedez &amp; Masini|-2367|
+|21| · Mara Sattei|-2780|
+|22| · Patty Pravo|-3267|
+|23| · Enrico Nigiotti|-3390|
+|24| · Elettra Lamborghini|-3600|
+|25| · Michele Bravi|-4027|
+|26| · Francesco Renga|-4097|
+|27| · Tommaso Paradiso|-4133|
+|28| · Leo Gassmann|-4333|
+|29| · Luchè|-6490|
+|30| · Eddie Brock|-6520|
+
+---
+
+**MIGLIOR ESIBIZIONE**
+
+|Posizione|Partecipante|Punteggio|
+|:-|:-|:-|
+|🥇| · Dito nella piaga|6083|
+|🥈| · Arisa|4647|
+|🥉| · Levante|4157|
+|4| · Malika Ayane|3663|
+|5| · Maria Antonietta &amp; Colombre|3637|
+|6| · Bambole di Pezza|3467|
+|7| · Fulminacci|3223|
+|8| · Serena Brancale|2540|
+|9| · Dargen D'Amico|2480|
+|10| · Sal Da Vinci|2210|
+|11| · LDA e AKA 7even|2040|
+|12| · J-Ax|1597|
+|13| · Ermal Meta|840|
+|14| · Raf|717|
+|15| · Chiello|-53|
+|16| · Sayf|-757|
+|17| · Elettra Lamborghini|-803|
+|18| · Tredici Pietro|-1017|
+|19| · Mara Sattei|-1083|
+|20| · Nayt|-1250|
+|21| · Samurai Jay|-1320|
+|22| · Patty Pravo|-1633|
+|23| · Fedez &amp; Masini|-1650|
+|24| · Francesco Renga|-2543|
+|25| · Enrico Nigiotti|-3043|
+|26| · Michele Bravi|-3707|
+|27| · Leo Gassmann|-3890|
+|28| · Tommaso Paradiso|-4867|
+|29| · Eddie Brock|-6863|
+|30| · Luchè|-7897| || **Regolamento:**
+
+Una scelta al giorno, il più votato/più citato nei commenti verrà inserito nella tabella!  
+In caso di parità vincerà il concorrente più citato, in caso di ulteriore parità si sorteggerà il vincitore.
+
+Bisogna proporre concorrenti di questa edizione di Sanremo!
+
+**Lista Concorrenti:**  
+Tommaso Paradiso  
+Chiello  
+Serena Brancale  
+Fulminacci  
+Ditonellapiaga  
+Fedez &amp; Masini  
+Leo Gassmann  
+Sayf  
+Arisa  
+Tredici Pietro  
+Sal Da Vinci  
+Samurai Jay  
+Malika Ayane  
+Luchè  
+Raf  
+Bambole di Pezza  
+Ermal Meta  
+Nayt  
+Elettra Lamborghini  
+Michele Bravi  
+J-Ax  
+Enrico Nigiotti  
+Maria Antonietta &amp; Colombre  
+Francesco Renga  
+Mara Sattei  
+LDA &amp; Aka 7even  
+Dargen D’Amico  
+Levante  
+Eddie Brock  
+Patty Pravo"
+Sal Da Vinci,Per sempre sì,4,112,5456,1.0,positivo,"\&gt; diventi famoso per una canzone da matrimoni napoletani
+
+\&gt; inizi un programma in cui pizzerie si sfidano
+
+\&gt; vai a Sanremo con una canzone ancora più da matrimonio napoletano
+
+Chad Da Vinci, proprio
+
+https://preview.redd.it/2iy0dfwe0jlg1.png?width=1536&amp;format=png&amp;auto=webp&amp;s=3fda597c3bed09d1f655cea3899871b065e4d79e
+
+ || Nel 1947 Raf, uscendo dalla sede locale del PCI di Sganciabozzi sul Mincio, provincia di Mantova, vide un bambino che calciava con forza una lattina di Coca Cola. ""Come mai colpisci così forte quella lattina, piccolo?"" gli chiese. ""Perchè è il simbolo di un sistema capitalista iperconsumista che non si fa scrupolo nello sfruttare le risorse del pianeta e la forza lavoro a basso prezzo generata dagli squilibri di potere del secolo scorso per arricchire i pochi potenti del mondo a discapito della collettività."" Al che Raf rispose: ""Hai ragione, giovane, ma tu e la tua generazione siete la mia speranza per il futuro, eccoti un dollaro, spendilo per il bene della cosa pubblica!"" e porse al giovane un dollaro d'argento. Quel bambino era Hugo Chavez. || #🏆 LA CLASSIFICA DEL SUB  
+
+**MIGLIOR CANZONE**
+
+|Posizione|Partecipante|Punteggio|
+|:-|:-|:-|
+|🥇| · Dito nella piaga|5777|
+|🥈| · Fulminacci|3747|
+|🥉| · Maria Antonietta &amp; Colombre|3667|
+|4| · Malika Ayane|3307|
+|5| · Levante|2200|
+|6| · Dargen D'Amico|1953|
+|7| · Bambole di Pezza|1903|
+|8| · Tredici Pietro|1703|
+|9| · Sal Da Vinci|1227|
+|10| · Arisa|723|
+|11| · Serena Brancale|583|
+|12| · Sayf|563|
+|13| · Chiello|533|
+|14| · Raf|217|
+|15| · Ermal Meta|27|
+|16| · J-Ax|-103|
+|17| · LDA e AKA 7even|-120|
+|18| · Nayt|-667|
+|19| · Samurai Jay|-1977|
+|20| · Fedez &amp; Masini|-2367|
+|21| · Mara Sattei|-2780|
+|22| · Patty Pravo|-3267|
+|23| · Enrico Nigiotti|-3390|
+|24| · Elettra Lamborghini|-3600|
+|25| · Michele Bravi|-4027|
+|26| · Francesco Renga|-4097|
+|27| · Tommaso Paradiso|-4133|
+|28| · Leo Gassmann|-4333|
+|29| · Luchè|-6490|
+|30| · Eddie Brock|-6520|
+
+---
+
+**MIGLIOR ESIBIZIONE**
+
+|Posizione|Partecipante|Punteggio|
+|:-|:-|:-|
+|🥇| · Dito nella piaga|6083|
+|🥈| · Arisa|4647|
+|🥉| · Levante|4157|
+|4| · Malika Ayane|3663|
+|5| · Maria Antonietta &amp; Colombre|3637|
+|6| · Bambole di Pezza|3467|
+|7| · Fulminacci|3223|
+|8| · Serena Brancale|2540|
+|9| · Dargen D'Amico|2480|
+|10| · Sal Da Vinci|2210|
+|11| · LDA e AKA 7even|2040|
+|12| · J-Ax|1597|
+|13| · Ermal Meta|840|
+|14| · Raf|717|
+|15| · Chiello|-53|
+|16| · Sayf|-757|
+|17| · Elettra Lamborghini|-803|
+|18| · Tredici Pietro|-1017|
+|19| · Mara Sattei|-1083|
+|20| · Nayt|-1250|
+|21| · Samurai Jay|-1320|
+|22| · Patty Pravo|-1633|
+|23| · Fedez &amp; Masini|-1650|
+|24| · Francesco Renga|-2543|
+|25| · Enrico Nigiotti|-3043|
+|26| · Michele Bravi|-3707|
+|27| · Leo Gassmann|-3890|
+|28| · Tommaso Paradiso|-4867|
+|29| · Eddie Brock|-6863|
+|30| · Luchè|-7897|"
+Serena Brancale,Qui con me,4,112,5456,1.0,positivo,"#🏆 LA CLASSIFICA DEL SUB  
+
+**MIGLIOR CANZONE**
+
+|Posizione|Partecipante|Punteggio|
+|:-|:-|:-|
+|🥇| · Dito nella piaga|5777|
+|🥈| · Fulminacci|3747|
+|🥉| · Maria Antonietta &amp; Colombre|3667|
+|4| · Malika Ayane|3307|
+|5| · Levante|2200|
+|6| · Dargen D'Amico|1953|
+|7| · Bambole di Pezza|1903|
+|8| · Tredici Pietro|1703|
+|9| · Sal Da Vinci|1227|
+|10| · Arisa|723|
+|11| · Serena Brancale|583|
+|12| · Sayf|563|
+|13| · Chiello|533|
+|14| · Raf|217|
+|15| · Ermal Meta|27|
+|16| · J-Ax|-103|
+|17| · LDA e AKA 7even|-120|
+|18| · Nayt|-667|
+|19| · Samurai Jay|-1977|
+|20| · Fedez &amp; Masini|-2367|
+|21| · Mara Sattei|-2780|
+|22| · Patty Pravo|-3267|
+|23| · Enrico Nigiotti|-3390|
+|24| · Elettra Lamborghini|-3600|
+|25| · Michele Bravi|-4027|
+|26| · Francesco Renga|-4097|
+|27| · Tommaso Paradiso|-4133|
+|28| · Leo Gassmann|-4333|
+|29| · Luchè|-6490|
+|30| · Eddie Brock|-6520|
+
+---
+
+**MIGLIOR ESIBIZIONE**
+
+|Posizione|Partecipante|Punteggio|
+|:-|:-|:-|
+|🥇| · Dito nella piaga|6083|
+|🥈| · Arisa|4647|
+|🥉| · Levante|4157|
+|4| · Malika Ayane|3663|
+|5| · Maria Antonietta &amp; Colombre|3637|
+|6| · Bambole di Pezza|3467|
+|7| · Fulminacci|3223|
+|8| · Serena Brancale|2540|
+|9| · Dargen D'Amico|2480|
+|10| · Sal Da Vinci|2210|
+|11| · LDA e AKA 7even|2040|
+|12| · J-Ax|1597|
+|13| · Ermal Meta|840|
+|14| · Raf|717|
+|15| · Chiello|-53|
+|16| · Sayf|-757|
+|17| · Elettra Lamborghini|-803|
+|18| · Tredici Pietro|-1017|
+|19| · Mara Sattei|-1083|
+|20| · Nayt|-1250|
+|21| · Samurai Jay|-1320|
+|22| · Patty Pravo|-1633|
+|23| · Fedez &amp; Masini|-1650|
+|24| · Francesco Renga|-2543|
+|25| · Enrico Nigiotti|-3043|
+|26| · Michele Bravi|-3707|
+|27| · Leo Gassmann|-3890|
+|28| · Tommaso Paradiso|-4867|
+|29| · Eddie Brock|-6863|
+|30| · Luchè|-7897| || **Regolamento:**
+
+Una scelta al giorno, il più votato/più citato nei commenti verrà inserito nella tabella!  
+In caso di parità vincerà il concorrente più citato, in caso di ulteriore parità si sorteggerà il vincitore.
+
+Bisogna proporre concorrenti di questa edizione di Sanremo!
+
+**Lista Concorrenti:**  
+Tommaso Paradiso  
+Chiello  
+Serena Brancale  
+Fulminacci  
+Ditonellapiaga  
+Fedez &amp; Masini  
+Leo Gassmann  
+Sayf  
+Arisa  
+Tredici Pietro  
+Sal Da Vinci  
+Samurai Jay  
+Malika Ayane  
+Luchè  
+Raf  
+Bambole di Pezza  
+Ermal Meta  
+Nayt  
+Elettra Lamborghini  
+Michele Bravi  
+J-Ax  
+Enrico Nigiotti  
+Maria Antonietta &amp; Colombre  
+Francesco Renga  
+Mara Sattei  
+LDA &amp; Aka 7even  
+Dargen D’Amico  
+Levante  
+Eddie Brock  
+Patty Pravo || Ci sarà per forza Tommaso Paradiso, bisogna stare attenti anche a Serena Brancale e Sayf"
+Tommaso Paradiso,I romantici,4,112,5456,1.0,positivo,"#🏆 LA CLASSIFICA DEL SUB  
+
+**MIGLIOR CANZONE**
+
+|Posizione|Partecipante|Punteggio|
+|:-|:-|:-|
+|🥇| · Dito nella piaga|5777|
+|🥈| · Fulminacci|3747|
+|🥉| · Maria Antonietta &amp; Colombre|3667|
+|4| · Malika Ayane|3307|
+|5| · Levante|2200|
+|6| · Dargen D'Amico|1953|
+|7| · Bambole di Pezza|1903|
+|8| · Tredici Pietro|1703|
+|9| · Sal Da Vinci|1227|
+|10| · Arisa|723|
+|11| · Serena Brancale|583|
+|12| · Sayf|563|
+|13| · Chiello|533|
+|14| · Raf|217|
+|15| · Ermal Meta|27|
+|16| · J-Ax|-103|
+|17| · LDA e AKA 7even|-120|
+|18| · Nayt|-667|
+|19| · Samurai Jay|-1977|
+|20| · Fedez &amp; Masini|-2367|
+|21| · Mara Sattei|-2780|
+|22| · Patty Pravo|-3267|
+|23| · Enrico Nigiotti|-3390|
+|24| · Elettra Lamborghini|-3600|
+|25| · Michele Bravi|-4027|
+|26| · Francesco Renga|-4097|
+|27| · Tommaso Paradiso|-4133|
+|28| · Leo Gassmann|-4333|
+|29| · Luchè|-6490|
+|30| · Eddie Brock|-6520|
+
+---
+
+**MIGLIOR ESIBIZIONE**
+
+|Posizione|Partecipante|Punteggio|
+|:-|:-|:-|
+|🥇| · Dito nella piaga|6083|
+|🥈| · Arisa|4647|
+|🥉| · Levante|4157|
+|4| · Malika Ayane|3663|
+|5| · Maria Antonietta &amp; Colombre|3637|
+|6| · Bambole di Pezza|3467|
+|7| · Fulminacci|3223|
+|8| · Serena Brancale|2540|
+|9| · Dargen D'Amico|2480|
+|10| · Sal Da Vinci|2210|
+|11| · LDA e AKA 7even|2040|
+|12| · J-Ax|1597|
+|13| · Ermal Meta|840|
+|14| · Raf|717|
+|15| · Chiello|-53|
+|16| · Sayf|-757|
+|17| · Elettra Lamborghini|-803|
+|18| · Tredici Pietro|-1017|
+|19| · Mara Sattei|-1083|
+|20| · Nayt|-1250|
+|21| · Samurai Jay|-1320|
+|22| · Patty Pravo|-1633|
+|23| · Fedez &amp; Masini|-1650|
+|24| · Francesco Renga|-2543|
+|25| · Enrico Nigiotti|-3043|
+|26| · Michele Bravi|-3707|
+|27| · Leo Gassmann|-3890|
+|28| · Tommaso Paradiso|-4867|
+|29| · Eddie Brock|-6863|
+|30| · Luchè|-7897| || **Regolamento:**
+
+Una scelta al giorno, il più votato/più citato nei commenti verrà inserito nella tabella!  
+In caso di parità vincerà il concorrente più citato, in caso di ulteriore parità si sorteggerà il vincitore.
+
+Bisogna proporre concorrenti di questa edizione di Sanremo!
+
+**Lista Concorrenti:**  
+Tommaso Paradiso  
+Chiello  
+Serena Brancale  
+Fulminacci  
+Ditonellapiaga  
+Fedez &amp; Masini  
+Leo Gassmann  
+Sayf  
+Arisa  
+Tredici Pietro  
+Sal Da Vinci  
+Samurai Jay  
+Malika Ayane  
+Luchè  
+Raf  
+Bambole di Pezza  
+Ermal Meta  
+Nayt  
+Elettra Lamborghini  
+Michele Bravi  
+J-Ax  
+Enrico Nigiotti  
+Maria Antonietta &amp; Colombre  
+Francesco Renga  
+Mara Sattei  
+LDA &amp; Aka 7even  
+Dargen D’Amico  
+Levante  
+Eddie Brock  
+Patty Pravo || Ci sarà per forza Tommaso Paradiso, bisogna stare attenti anche a Serena Brancale e Sayf"
+Bambole di pezza,Resta con me,3,110,5451,1.0,positivo,"#🏆 LA CLASSIFICA DEL SUB  
+
+**MIGLIOR CANZONE**
+
+|Posizione|Partecipante|Punteggio|
+|:-|:-|:-|
+|🥇| · Dito nella piaga|5777|
+|🥈| · Fulminacci|3747|
+|🥉| · Maria Antonietta &amp; Colombre|3667|
+|4| · Malika Ayane|3307|
+|5| · Levante|2200|
+|6| · Dargen D'Amico|1953|
+|7| · Bambole di Pezza|1903|
+|8| · Tredici Pietro|1703|
+|9| · Sal Da Vinci|1227|
+|10| · Arisa|723|
+|11| · Serena Brancale|583|
+|12| · Sayf|563|
+|13| · Chiello|533|
+|14| · Raf|217|
+|15| · Ermal Meta|27|
+|16| · J-Ax|-103|
+|17| · LDA e AKA 7even|-120|
+|18| · Nayt|-667|
+|19| · Samurai Jay|-1977|
+|20| · Fedez &amp; Masini|-2367|
+|21| · Mara Sattei|-2780|
+|22| · Patty Pravo|-3267|
+|23| · Enrico Nigiotti|-3390|
+|24| · Elettra Lamborghini|-3600|
+|25| · Michele Bravi|-4027|
+|26| · Francesco Renga|-4097|
+|27| · Tommaso Paradiso|-4133|
+|28| · Leo Gassmann|-4333|
+|29| · Luchè|-6490|
+|30| · Eddie Brock|-6520|
+
+---
+
+**MIGLIOR ESIBIZIONE**
+
+|Posizione|Partecipante|Punteggio|
+|:-|:-|:-|
+|🥇| · Dito nella piaga|6083|
+|🥈| · Arisa|4647|
+|🥉| · Levante|4157|
+|4| · Malika Ayane|3663|
+|5| · Maria Antonietta &amp; Colombre|3637|
+|6| · Bambole di Pezza|3467|
+|7| · Fulminacci|3223|
+|8| · Serena Brancale|2540|
+|9| · Dargen D'Amico|2480|
+|10| · Sal Da Vinci|2210|
+|11| · LDA e AKA 7even|2040|
+|12| · J-Ax|1597|
+|13| · Ermal Meta|840|
+|14| · Raf|717|
+|15| · Chiello|-53|
+|16| · Sayf|-757|
+|17| · Elettra Lamborghini|-803|
+|18| · Tredici Pietro|-1017|
+|19| · Mara Sattei|-1083|
+|20| · Nayt|-1250|
+|21| · Samurai Jay|-1320|
+|22| · Patty Pravo|-1633|
+|23| · Fedez &amp; Masini|-1650|
+|24| · Francesco Renga|-2543|
+|25| · Enrico Nigiotti|-3043|
+|26| · Michele Bravi|-3707|
+|27| · Leo Gassmann|-3890|
+|28| · Tommaso Paradiso|-4867|
+|29| · Eddie Brock|-6863|
+|30| · Luchè|-7897| || **Regolamento:**
+
+Una scelta al giorno, il più votato/più citato nei commenti verrà inserito nella tabella!  
+In caso di parità vincerà il concorrente più citato, in caso di ulteriore parità si sorteggerà il vincitore.
+
+Bisogna proporre concorrenti di questa edizione di Sanremo!
+
+**Lista Concorrenti:**  
+Tommaso Paradiso  
+Chiello  
+Serena Brancale  
+Fulminacci  
+Ditonellapiaga  
+Fedez &amp; Masini  
+Leo Gassmann  
+Sayf  
+Arisa  
+Tredici Pietro  
+Sal Da Vinci  
+Samurai Jay  
+Malika Ayane  
+Luchè  
+Raf  
+Bambole di Pezza  
+Ermal Meta  
+Nayt  
+Elettra Lamborghini  
+Michele Bravi  
+J-Ax  
+Enrico Nigiotti  
+Maria Antonietta &amp; Colombre  
+Francesco Renga  
+Mara Sattei  
+LDA &amp; Aka 7even  
+Dargen D’Amico  
+Levante  
+Eddie Brock  
+Patty Pravo"
+Chiello,Ti penso sempre,3,110,5451,1.0,positivo,"Non tutti sanno che Patty Pravo è il fiore all'occhiello della Industrial light and magic di George Lucas in campo di animatronics. Per realizzare i movimenti facciali dell'esemplare utilizzato per la prima serata del festival di Sanremo sono stati utilizzati 14 servomotori alimentari da 12 celle al litio e comandati da una scheda elettronica miniaturizzata sapientemente nascosta nella capigliatura della marionetta. Che passi avanti che ha fatto la tecnologia. || Chiello || #🏆 LA CLASSIFICA DEL SUB  
+
+**MIGLIOR CANZONE**
+
+|Posizione|Partecipante|Punteggio|
+|:-|:-|:-|
+|🥇| · Dito nella piaga|5777|
+|🥈| · Fulminacci|3747|
+|🥉| · Maria Antonietta &amp; Colombre|3667|
+|4| · Malika Ayane|3307|
+|5| · Levante|2200|
+|6| · Dargen D'Amico|1953|
+|7| · Bambole di Pezza|1903|
+|8| · Tredici Pietro|1703|
+|9| · Sal Da Vinci|1227|
+|10| · Arisa|723|
+|11| · Serena Brancale|583|
+|12| · Sayf|563|
+|13| · Chiello|533|
+|14| · Raf|217|
+|15| · Ermal Meta|27|
+|16| · J-Ax|-103|
+|17| · LDA e AKA 7even|-120|
+|18| · Nayt|-667|
+|19| · Samurai Jay|-1977|
+|20| · Fedez &amp; Masini|-2367|
+|21| · Mara Sattei|-2780|
+|22| · Patty Pravo|-3267|
+|23| · Enrico Nigiotti|-3390|
+|24| · Elettra Lamborghini|-3600|
+|25| · Michele Bravi|-4027|
+|26| · Francesco Renga|-4097|
+|27| · Tommaso Paradiso|-4133|
+|28| · Leo Gassmann|-4333|
+|29| · Luchè|-6490|
+|30| · Eddie Brock|-6520|
+
+---
+
+**MIGLIOR ESIBIZIONE**
+
+|Posizione|Partecipante|Punteggio|
+|:-|:-|:-|
+|🥇| · Dito nella piaga|6083|
+|🥈| · Arisa|4647|
+|🥉| · Levante|4157|
+|4| · Malika Ayane|3663|
+|5| · Maria Antonietta &amp; Colombre|3637|
+|6| · Bambole di Pezza|3467|
+|7| · Fulminacci|3223|
+|8| · Serena Brancale|2540|
+|9| · Dargen D'Amico|2480|
+|10| · Sal Da Vinci|2210|
+|11| · LDA e AKA 7even|2040|
+|12| · J-Ax|1597|
+|13| · Ermal Meta|840|
+|14| · Raf|717|
+|15| · Chiello|-53|
+|16| · Sayf|-757|
+|17| · Elettra Lamborghini|-803|
+|18| · Tredici Pietro|-1017|
+|19| · Mara Sattei|-1083|
+|20| · Nayt|-1250|
+|21| · Samurai Jay|-1320|
+|22| · Patty Pravo|-1633|
+|23| · Fedez &amp; Masini|-1650|
+|24| · Francesco Renga|-2543|
+|25| · Enrico Nigiotti|-3043|
+|26| · Michele Bravi|-3707|
+|27| · Leo Gassmann|-3890|
+|28| · Tommaso Paradiso|-4867|
+|29| · Eddie Brock|-6863|
+|30| · Luchè|-7897|"
+Ditonellapiaga,Che fastidio!,3,110,5451,1.0,positivo,"Riassunto dell'esibizione di Ditonellapiaga:
+
+https://i.redd.it/v4wyz10c0ilg1.gif
+
+ || **Regolamento:**
+
+Una scelta al giorno, il più votato/più citato nei commenti verrà inserito nella tabella!  
+In caso di parità vincerà il concorrente più citato, in caso di ulteriore parità si sorteggerà il vincitore.
+
+Bisogna proporre concorrenti di questa edizione di Sanremo!
+
+**Lista Concorrenti:**  
+Tommaso Paradiso  
+Chiello  
+Serena Brancale  
+Fulminacci  
+Ditonellapiaga  
+Fedez &amp; Masini  
+Leo Gassmann  
+Sayf  
+Arisa  
+Tredici Pietro  
+Sal Da Vinci  
+Samurai Jay  
+Malika Ayane  
+Luchè  
+Raf  
+Bambole di Pezza  
+Ermal Meta  
+Nayt  
+Elettra Lamborghini  
+Michele Bravi  
+J-Ax  
+Enrico Nigiotti  
+Maria Antonietta &amp; Colombre  
+Francesco Renga  
+Mara Sattei  
+LDA &amp; Aka 7even  
+Dargen D’Amico  
+Levante  
+Eddie Brock  
+Patty Pravo"
+Eddie Brock,Avvoltoi,3,110,5451,1.0,positivo,"#🏆 LA CLASSIFICA DEL SUB  
+
+**MIGLIOR CANZONE**
+
+|Posizione|Partecipante|Punteggio|
+|:-|:-|:-|
+|🥇| · Dito nella piaga|5777|
+|🥈| · Fulminacci|3747|
+|🥉| · Maria Antonietta &amp; Colombre|3667|
+|4| · Malika Ayane|3307|
+|5| · Levante|2200|
+|6| · Dargen D'Amico|1953|
+|7| · Bambole di Pezza|1903|
+|8| · Tredici Pietro|1703|
+|9| · Sal Da Vinci|1227|
+|10| · Arisa|723|
+|11| · Serena Brancale|583|
+|12| · Sayf|563|
+|13| · Chiello|533|
+|14| · Raf|217|
+|15| · Ermal Meta|27|
+|16| · J-Ax|-103|
+|17| · LDA e AKA 7even|-120|
+|18| · Nayt|-667|
+|19| · Samurai Jay|-1977|
+|20| · Fedez &amp; Masini|-2367|
+|21| · Mara Sattei|-2780|
+|22| · Patty Pravo|-3267|
+|23| · Enrico Nigiotti|-3390|
+|24| · Elettra Lamborghini|-3600|
+|25| · Michele Bravi|-4027|
+|26| · Francesco Renga|-4097|
+|27| · Tommaso Paradiso|-4133|
+|28| · Leo Gassmann|-4333|
+|29| · Luchè|-6490|
+|30| · Eddie Brock|-6520|
+
+---
+
+**MIGLIOR ESIBIZIONE**
+
+|Posizione|Partecipante|Punteggio|
+|:-|:-|:-|
+|🥇| · Dito nella piaga|6083|
+|🥈| · Arisa|4647|
+|🥉| · Levante|4157|
+|4| · Malika Ayane|3663|
+|5| · Maria Antonietta &amp; Colombre|3637|
+|6| · Bambole di Pezza|3467|
+|7| · Fulminacci|3223|
+|8| · Serena Brancale|2540|
+|9| · Dargen D'Amico|2480|
+|10| · Sal Da Vinci|2210|
+|11| · LDA e AKA 7even|2040|
+|12| · J-Ax|1597|
+|13| · Ermal Meta|840|
+|14| · Raf|717|
+|15| · Chiello|-53|
+|16| · Sayf|-757|
+|17| · Elettra Lamborghini|-803|
+|18| · Tredici Pietro|-1017|
+|19| · Mara Sattei|-1083|
+|20| · Nayt|-1250|
+|21| · Samurai Jay|-1320|
+|22| · Patty Pravo|-1633|
+|23| · Fedez &amp; Masini|-1650|
+|24| · Francesco Renga|-2543|
+|25| · Enrico Nigiotti|-3043|
+|26| · Michele Bravi|-3707|
+|27| · Leo Gassmann|-3890|
+|28| · Tommaso Paradiso|-4867|
+|29| · Eddie Brock|-6863|
+|30| · Luchè|-7897| || **Regolamento:**
+
+Una scelta al giorno, il più votato/più citato nei commenti verrà inserito nella tabella!  
+In caso di parità vincerà il concorrente più citato, in caso di ulteriore parità si sorteggerà il vincitore.
+
+Bisogna proporre concorrenti di questa edizione di Sanremo!
+
+**Lista Concorrenti:**  
+Tommaso Paradiso  
+Chiello  
+Serena Brancale  
+Fulminacci  
+Ditonellapiaga  
+Fedez &amp; Masini  
+Leo Gassmann  
+Sayf  
+Arisa  
+Tredici Pietro  
+Sal Da Vinci  
+Samurai Jay  
+Malika Ayane  
+Luchè  
+Raf  
+Bambole di Pezza  
+Ermal Meta  
+Nayt  
+Elettra Lamborghini  
+Michele Bravi  
+J-Ax  
+Enrico Nigiotti  
+Maria Antonietta &amp; Colombre  
+Francesco Renga  
+Mara Sattei  
+LDA &amp; Aka 7even  
+Dargen D’Amico  
+Levante  
+Eddie Brock  
+Patty Pravo"
+Elettra Lamborghini,Voilà,3,110,5451,1.0,positivo,"Lamborghini ha detto che se non vince il Sanremo, vuole vincere almeno il Fanta hahah || #🏆 LA CLASSIFICA DEL SUB  
+
+**MIGLIOR CANZONE**
+
+|Posizione|Partecipante|Punteggio|
+|:-|:-|:-|
+|🥇| · Dito nella piaga|5777|
+|🥈| · Fulminacci|3747|
+|🥉| · Maria Antonietta &amp; Colombre|3667|
+|4| · Malika Ayane|3307|
+|5| · Levante|2200|
+|6| · Dargen D'Amico|1953|
+|7| · Bambole di Pezza|1903|
+|8| · Tredici Pietro|1703|
+|9| · Sal Da Vinci|1227|
+|10| · Arisa|723|
+|11| · Serena Brancale|583|
+|12| · Sayf|563|
+|13| · Chiello|533|
+|14| · Raf|217|
+|15| · Ermal Meta|27|
+|16| · J-Ax|-103|
+|17| · LDA e AKA 7even|-120|
+|18| · Nayt|-667|
+|19| · Samurai Jay|-1977|
+|20| · Fedez &amp; Masini|-2367|
+|21| · Mara Sattei|-2780|
+|22| · Patty Pravo|-3267|
+|23| · Enrico Nigiotti|-3390|
+|24| · Elettra Lamborghini|-3600|
+|25| · Michele Bravi|-4027|
+|26| · Francesco Renga|-4097|
+|27| · Tommaso Paradiso|-4133|
+|28| · Leo Gassmann|-4333|
+|29| · Luchè|-6490|
+|30| · Eddie Brock|-6520|
+
+---
+
+**MIGLIOR ESIBIZIONE**
+
+|Posizione|Partecipante|Punteggio|
+|:-|:-|:-|
+|🥇| · Dito nella piaga|6083|
+|🥈| · Arisa|4647|
+|🥉| · Levante|4157|
+|4| · Malika Ayane|3663|
+|5| · Maria Antonietta &amp; Colombre|3637|
+|6| · Bambole di Pezza|3467|
+|7| · Fulminacci|3223|
+|8| · Serena Brancale|2540|
+|9| · Dargen D'Amico|2480|
+|10| · Sal Da Vinci|2210|
+|11| · LDA e AKA 7even|2040|
+|12| · J-Ax|1597|
+|13| · Ermal Meta|840|
+|14| · Raf|717|
+|15| · Chiello|-53|
+|16| · Sayf|-757|
+|17| · Elettra Lamborghini|-803|
+|18| · Tredici Pietro|-1017|
+|19| · Mara Sattei|-1083|
+|20| · Nayt|-1250|
+|21| · Samurai Jay|-1320|
+|22| · Patty Pravo|-1633|
+|23| · Fedez &amp; Masini|-1650|
+|24| · Francesco Renga|-2543|
+|25| · Enrico Nigiotti|-3043|
+|26| · Michele Bravi|-3707|
+|27| · Leo Gassmann|-3890|
+|28| · Tommaso Paradiso|-4867|
+|29| · Eddie Brock|-6863|
+|30| · Luchè|-7897| || Qualcuno può dirmi che musica è stata usata per presentare Elettra Lamborghini? Mi suonava così familiare!   
+  
+(Can anyone tell me what Elettra Lamborghini's intro music was? Sounded so familiar!)"
+Enrico Nigiotti,Ogni volta che non so volare,3,110,5451,1.0,positivo,"#🏆 LA CLASSIFICA DEL SUB  
+
+**MIGLIOR CANZONE**
+
+|Posizione|Partecipante|Punteggio|
+|:-|:-|:-|
+|🥇| · Dito nella piaga|5777|
+|🥈| · Fulminacci|3747|
+|🥉| · Maria Antonietta &amp; Colombre|3667|
+|4| · Malika Ayane|3307|
+|5| · Levante|2200|
+|6| · Dargen D'Amico|1953|
+|7| · Bambole di Pezza|1903|
+|8| · Tredici Pietro|1703|
+|9| · Sal Da Vinci|1227|
+|10| · Arisa|723|
+|11| · Serena Brancale|583|
+|12| · Sayf|563|
+|13| · Chiello|533|
+|14| · Raf|217|
+|15| · Ermal Meta|27|
+|16| · J-Ax|-103|
+|17| · LDA e AKA 7even|-120|
+|18| · Nayt|-667|
+|19| · Samurai Jay|-1977|
+|20| · Fedez &amp; Masini|-2367|
+|21| · Mara Sattei|-2780|
+|22| · Patty Pravo|-3267|
+|23| · Enrico Nigiotti|-3390|
+|24| · Elettra Lamborghini|-3600|
+|25| · Michele Bravi|-4027|
+|26| · Francesco Renga|-4097|
+|27| · Tommaso Paradiso|-4133|
+|28| · Leo Gassmann|-4333|
+|29| · Luchè|-6490|
+|30| · Eddie Brock|-6520|
+
+---
+
+**MIGLIOR ESIBIZIONE**
+
+|Posizione|Partecipante|Punteggio|
+|:-|:-|:-|
+|🥇| · Dito nella piaga|6083|
+|🥈| · Arisa|4647|
+|🥉| · Levante|4157|
+|4| · Malika Ayane|3663|
+|5| · Maria Antonietta &amp; Colombre|3637|
+|6| · Bambole di Pezza|3467|
+|7| · Fulminacci|3223|
+|8| · Serena Brancale|2540|
+|9| · Dargen D'Amico|2480|
+|10| · Sal Da Vinci|2210|
+|11| · LDA e AKA 7even|2040|
+|12| · J-Ax|1597|
+|13| · Ermal Meta|840|
+|14| · Raf|717|
+|15| · Chiello|-53|
+|16| · Sayf|-757|
+|17| · Elettra Lamborghini|-803|
+|18| · Tredici Pietro|-1017|
+|19| · Mara Sattei|-1083|
+|20| · Nayt|-1250|
+|21| · Samurai Jay|-1320|
+|22| · Patty Pravo|-1633|
+|23| · Fedez &amp; Masini|-1650|
+|24| · Francesco Renga|-2543|
+|25| · Enrico Nigiotti|-3043|
+|26| · Michele Bravi|-3707|
+|27| · Leo Gassmann|-3890|
+|28| · Tommaso Paradiso|-4867|
+|29| · Eddie Brock|-6863|
+|30| · Luchè|-7897| || **Regolamento:**
+
+Una scelta al giorno, il più votato/più citato nei commenti verrà inserito nella tabella!  
+In caso di parità vincerà il concorrente più citato, in caso di ulteriore parità si sorteggerà il vincitore.
+
+Bisogna proporre concorrenti di questa edizione di Sanremo!
+
+**Lista Concorrenti:**  
+Tommaso Paradiso  
+Chiello  
+Serena Brancale  
+Fulminacci  
+Ditonellapiaga  
+Fedez &amp; Masini  
+Leo Gassmann  
+Sayf  
+Arisa  
+Tredici Pietro  
+Sal Da Vinci  
+Samurai Jay  
+Malika Ayane  
+Luchè  
+Raf  
+Bambole di Pezza  
+Ermal Meta  
+Nayt  
+Elettra Lamborghini  
+Michele Bravi  
+J-Ax  
+Enrico Nigiotti  
+Maria Antonietta &amp; Colombre  
+Francesco Renga  
+Mara Sattei  
+LDA &amp; Aka 7even  
+Dargen D’Amico  
+Levante  
+Eddie Brock  
+Patty Pravo"
+Francesco Renga,Il meglio di me,3,110,5451,1.0,positivo,"#🏆 LA CLASSIFICA DEL SUB  
+
+**MIGLIOR CANZONE**
+
+|Posizione|Partecipante|Punteggio|
+|:-|:-|:-|
+|🥇| · Dito nella piaga|5777|
+|🥈| · Fulminacci|3747|
+|🥉| · Maria Antonietta &amp; Colombre|3667|
+|4| · Malika Ayane|3307|
+|5| · Levante|2200|
+|6| · Dargen D'Amico|1953|
+|7| · Bambole di Pezza|1903|
+|8| · Tredici Pietro|1703|
+|9| · Sal Da Vinci|1227|
+|10| · Arisa|723|
+|11| · Serena Brancale|583|
+|12| · Sayf|563|
+|13| · Chiello|533|
+|14| · Raf|217|
+|15| · Ermal Meta|27|
+|16| · J-Ax|-103|
+|17| · LDA e AKA 7even|-120|
+|18| · Nayt|-667|
+|19| · Samurai Jay|-1977|
+|20| · Fedez &amp; Masini|-2367|
+|21| · Mara Sattei|-2780|
+|22| · Patty Pravo|-3267|
+|23| · Enrico Nigiotti|-3390|
+|24| · Elettra Lamborghini|-3600|
+|25| · Michele Bravi|-4027|
+|26| · Francesco Renga|-4097|
+|27| · Tommaso Paradiso|-4133|
+|28| · Leo Gassmann|-4333|
+|29| · Luchè|-6490|
+|30| · Eddie Brock|-6520|
+
+---
+
+**MIGLIOR ESIBIZIONE**
+
+|Posizione|Partecipante|Punteggio|
+|:-|:-|:-|
+|🥇| · Dito nella piaga|6083|
+|🥈| · Arisa|4647|
+|🥉| · Levante|4157|
+|4| · Malika Ayane|3663|
+|5| · Maria Antonietta &amp; Colombre|3637|
+|6| · Bambole di Pezza|3467|
+|7| · Fulminacci|3223|
+|8| · Serena Brancale|2540|
+|9| · Dargen D'Amico|2480|
+|10| · Sal Da Vinci|2210|
+|11| · LDA e AKA 7even|2040|
+|12| · J-Ax|1597|
+|13| · Ermal Meta|840|
+|14| · Raf|717|
+|15| · Chiello|-53|
+|16| · Sayf|-757|
+|17| · Elettra Lamborghini|-803|
+|18| · Tredici Pietro|-1017|
+|19| · Mara Sattei|-1083|
+|20| · Nayt|-1250|
+|21| · Samurai Jay|-1320|
+|22| · Patty Pravo|-1633|
+|23| · Fedez &amp; Masini|-1650|
+|24| · Francesco Renga|-2543|
+|25| · Enrico Nigiotti|-3043|
+|26| · Michele Bravi|-3707|
+|27| · Leo Gassmann|-3890|
+|28| · Tommaso Paradiso|-4867|
+|29| · Eddie Brock|-6863|
+|30| · Luchè|-7897| || **Regolamento:**
+
+Una scelta al giorno, il più votato/più citato nei commenti verrà inserito nella tabella!  
+In caso di parità vincerà il concorrente più citato, in caso di ulteriore parità si sorteggerà il vincitore.
+
+Bisogna proporre concorrenti di questa edizione di Sanremo!
+
+**Lista Concorrenti:**  
+Tommaso Paradiso  
+Chiello  
+Serena Brancale  
+Fulminacci  
+Ditonellapiaga  
+Fedez &amp; Masini  
+Leo Gassmann  
+Sayf  
+Arisa  
+Tredici Pietro  
+Sal Da Vinci  
+Samurai Jay  
+Malika Ayane  
+Luchè  
+Raf  
+Bambole di Pezza  
+Ermal Meta  
+Nayt  
+Elettra Lamborghini  
+Michele Bravi  
+J-Ax  
+Enrico Nigiotti  
+Maria Antonietta &amp; Colombre  
+Francesco Renga  
+Mara Sattei  
+LDA &amp; Aka 7even  
+Dargen D’Amico  
+Levante  
+Eddie Brock  
+Patty Pravo"
+Fulminacci,Stupida sfortuna,3,110,5451,1.0,positivo,"Fulminacci nell'abito di stasera:
+
+https://preview.redd.it/6bku616wnilg1.png?width=655&amp;format=png&amp;auto=webp&amp;s=add9fa1aedfa24205cf81b08c163220513ed1a55
+
+ || #🏆 LA CLASSIFICA DEL SUB  
+
+**MIGLIOR CANZONE**
+
+|Posizione|Partecipante|Punteggio|
+|:-|:-|:-|
+|🥇| · Dito nella piaga|5777|
+|🥈| · Fulminacci|3747|
+|🥉| · Maria Antonietta &amp; Colombre|3667|
+|4| · Malika Ayane|3307|
+|5| · Levante|2200|
+|6| · Dargen D'Amico|1953|
+|7| · Bambole di Pezza|1903|
+|8| · Tredici Pietro|1703|
+|9| · Sal Da Vinci|1227|
+|10| · Arisa|723|
+|11| · Serena Brancale|583|
+|12| · Sayf|563|
+|13| · Chiello|533|
+|14| · Raf|217|
+|15| · Ermal Meta|27|
+|16| · J-Ax|-103|
+|17| · LDA e AKA 7even|-120|
+|18| · Nayt|-667|
+|19| · Samurai Jay|-1977|
+|20| · Fedez &amp; Masini|-2367|
+|21| · Mara Sattei|-2780|
+|22| · Patty Pravo|-3267|
+|23| · Enrico Nigiotti|-3390|
+|24| · Elettra Lamborghini|-3600|
+|25| · Michele Bravi|-4027|
+|26| · Francesco Renga|-4097|
+|27| · Tommaso Paradiso|-4133|
+|28| · Leo Gassmann|-4333|
+|29| · Luchè|-6490|
+|30| · Eddie Brock|-6520|
+
+---
+
+**MIGLIOR ESIBIZIONE**
+
+|Posizione|Partecipante|Punteggio|
+|:-|:-|:-|
+|🥇| · Dito nella piaga|6083|
+|🥈| · Arisa|4647|
+|🥉| · Levante|4157|
+|4| · Malika Ayane|3663|
+|5| · Maria Antonietta &amp; Colombre|3637|
+|6| · Bambole di Pezza|3467|
+|7| · Fulminacci|3223|
+|8| · Serena Brancale|2540|
+|9| · Dargen D'Amico|2480|
+|10| · Sal Da Vinci|2210|
+|11| · LDA e AKA 7even|2040|
+|12| · J-Ax|1597|
+|13| · Ermal Meta|840|
+|14| · Raf|717|
+|15| · Chiello|-53|
+|16| · Sayf|-757|
+|17| · Elettra Lamborghini|-803|
+|18| · Tredici Pietro|-1017|
+|19| · Mara Sattei|-1083|
+|20| · Nayt|-1250|
+|21| · Samurai Jay|-1320|
+|22| · Patty Pravo|-1633|
+|23| · Fedez &amp; Masini|-1650|
+|24| · Francesco Renga|-2543|
+|25| · Enrico Nigiotti|-3043|
+|26| · Michele Bravi|-3707|
+|27| · Leo Gassmann|-3890|
+|28| · Tommaso Paradiso|-4867|
+|29| · Eddie Brock|-6863|
+|30| · Luchè|-7897| || **Regolamento:**
+
+Una scelta al giorno, il più votato/più citato nei commenti verrà inserito nella tabella!  
+In caso di parità vincerà il concorrente più citato, in caso di ulteriore parità si sorteggerà il vincitore.
+
+Bisogna proporre concorrenti di questa edizione di Sanremo!
+
+**Lista Concorrenti:**  
+Tommaso Paradiso  
+Chiello  
+Serena Brancale  
+Fulminacci  
+Ditonellapiaga  
+Fedez &amp; Masini  
+Leo Gassmann  
+Sayf  
+Arisa  
+Tredici Pietro  
+Sal Da Vinci  
+Samurai Jay  
+Malika Ayane  
+Luchè  
+Raf  
+Bambole di Pezza  
+Ermal Meta  
+Nayt  
+Elettra Lamborghini  
+Michele Bravi  
+J-Ax  
+Enrico Nigiotti  
+Maria Antonietta &amp; Colombre  
+Francesco Renga  
+Mara Sattei  
+LDA &amp; Aka 7even  
+Dargen D’Amico  
+Levante  
+Eddie Brock  
+Patty Pravo"
+J-Ax,Italia Starter Pack,3,110,5451,1.0,positivo,"J-Ax, al secolo Johny Axel, nasce nel 1923 in un piccolo ranch del Montana da mamma Elizabeth e papà Ronald. Già dall'età di 7 anni mostra una spiccata propensione all'adomesticamento delle mandrie e innate doti di cavallerizzo. La sua carriera da cowboy sembra spianata davanti a lui come le vallate tra i monti di casa sua fino a quel tragico 8 dicembre 1941, quando viene arruolato forzatamente per andare a combattere per la libertà dell'Europa e dell'occidente tutto, minacciato dalle mire espansionistiche del terzo reich. Sfortunatamente muore sul campo di battaglia per salvare 28 dei suoi compangni di plotone, che una volta tornati in patri intitoleranno a lui la piazza princiaple di Helena, capitale del Montana. Quello che si esibisce oggi è un ologramma 3D interpolato digitalmente per tenerne viva la memoria. || #🏆 LA CLASSIFICA DEL SUB  
+
+**MIGLIOR CANZONE**
+
+|Posizione|Partecipante|Punteggio|
+|:-|:-|:-|
+|🥇| · Dito nella piaga|5777|
+|🥈| · Fulminacci|3747|
+|🥉| · Maria Antonietta &amp; Colombre|3667|
+|4| · Malika Ayane|3307|
+|5| · Levante|2200|
+|6| · Dargen D'Amico|1953|
+|7| · Bambole di Pezza|1903|
+|8| · Tredici Pietro|1703|
+|9| · Sal Da Vinci|1227|
+|10| · Arisa|723|
+|11| · Serena Brancale|583|
+|12| · Sayf|563|
+|13| · Chiello|533|
+|14| · Raf|217|
+|15| · Ermal Meta|27|
+|16| · J-Ax|-103|
+|17| · LDA e AKA 7even|-120|
+|18| · Nayt|-667|
+|19| · Samurai Jay|-1977|
+|20| · Fedez &amp; Masini|-2367|
+|21| · Mara Sattei|-2780|
+|22| · Patty Pravo|-3267|
+|23| · Enrico Nigiotti|-3390|
+|24| · Elettra Lamborghini|-3600|
+|25| · Michele Bravi|-4027|
+|26| · Francesco Renga|-4097|
+|27| · Tommaso Paradiso|-4133|
+|28| · Leo Gassmann|-4333|
+|29| · Luchè|-6490|
+|30| · Eddie Brock|-6520|
+
+---
+
+**MIGLIOR ESIBIZIONE**
+
+|Posizione|Partecipante|Punteggio|
+|:-|:-|:-|
+|🥇| · Dito nella piaga|6083|
+|🥈| · Arisa|4647|
+|🥉| · Levante|4157|
+|4| · Malika Ayane|3663|
+|5| · Maria Antonietta &amp; Colombre|3637|
+|6| · Bambole di Pezza|3467|
+|7| · Fulminacci|3223|
+|8| · Serena Brancale|2540|
+|9| · Dargen D'Amico|2480|
+|10| · Sal Da Vinci|2210|
+|11| · LDA e AKA 7even|2040|
+|12| · J-Ax|1597|
+|13| · Ermal Meta|840|
+|14| · Raf|717|
+|15| · Chiello|-53|
+|16| · Sayf|-757|
+|17| · Elettra Lamborghini|-803|
+|18| · Tredici Pietro|-1017|
+|19| · Mara Sattei|-1083|
+|20| · Nayt|-1250|
+|21| · Samurai Jay|-1320|
+|22| · Patty Pravo|-1633|
+|23| · Fedez &amp; Masini|-1650|
+|24| · Francesco Renga|-2543|
+|25| · Enrico Nigiotti|-3043|
+|26| · Michele Bravi|-3707|
+|27| · Leo Gassmann|-3890|
+|28| · Tommaso Paradiso|-4867|
+|29| · Eddie Brock|-6863|
+|30| · Luchè|-7897| || **Regolamento:**
+
+Una scelta al giorno, il più votato/più citato nei commenti verrà inserito nella tabella!  
+In caso di parità vincerà il concorrente più citato, in caso di ulteriore parità si sorteggerà il vincitore.
+
+Bisogna proporre concorrenti di questa edizione di Sanremo!
+
+**Lista Concorrenti:**  
+Tommaso Paradiso  
+Chiello  
+Serena Brancale  
+Fulminacci  
+Ditonellapiaga  
+Fedez &amp; Masini  
+Leo Gassmann  
+Sayf  
+Arisa  
+Tredici Pietro  
+Sal Da Vinci  
+Samurai Jay  
+Malika Ayane  
+Luchè  
+Raf  
+Bambole di Pezza  
+Ermal Meta  
+Nayt  
+Elettra Lamborghini  
+Michele Bravi  
+J-Ax  
+Enrico Nigiotti  
+Maria Antonietta &amp; Colombre  
+Francesco Renga  
+Mara Sattei  
+LDA &amp; Aka 7even  
+Dargen D’Amico  
+Levante  
+Eddie Brock  
+Patty Pravo"
+LDA e AKA 7even,Poesie clandestine,3,110,5451,1.0,positivo,"#🏆 LA CLASSIFICA DEL SUB  
+
+**MIGLIOR CANZONE**
+
+|Posizione|Partecipante|Punteggio|
+|:-|:-|:-|
+|🥇| · Dito nella piaga|5777|
+|🥈| · Fulminacci|3747|
+|🥉| · Maria Antonietta &amp; Colombre|3667|
+|4| · Malika Ayane|3307|
+|5| · Levante|2200|
+|6| · Dargen D'Amico|1953|
+|7| · Bambole di Pezza|1903|
+|8| · Tredici Pietro|1703|
+|9| · Sal Da Vinci|1227|
+|10| · Arisa|723|
+|11| · Serena Brancale|583|
+|12| · Sayf|563|
+|13| · Chiello|533|
+|14| · Raf|217|
+|15| · Ermal Meta|27|
+|16| · J-Ax|-103|
+|17| · LDA e AKA 7even|-120|
+|18| · Nayt|-667|
+|19| · Samurai Jay|-1977|
+|20| · Fedez &amp; Masini|-2367|
+|21| · Mara Sattei|-2780|
+|22| · Patty Pravo|-3267|
+|23| · Enrico Nigiotti|-3390|
+|24| · Elettra Lamborghini|-3600|
+|25| · Michele Bravi|-4027|
+|26| · Francesco Renga|-4097|
+|27| · Tommaso Paradiso|-4133|
+|28| · Leo Gassmann|-4333|
+|29| · Luchè|-6490|
+|30| · Eddie Brock|-6520|
+
+---
+
+**MIGLIOR ESIBIZIONE**
+
+|Posizione|Partecipante|Punteggio|
+|:-|:-|:-|
+|🥇| · Dito nella piaga|6083|
+|🥈| · Arisa|4647|
+|🥉| · Levante|4157|
+|4| · Malika Ayane|3663|
+|5| · Maria Antonietta &amp; Colombre|3637|
+|6| · Bambole di Pezza|3467|
+|7| · Fulminacci|3223|
+|8| · Serena Brancale|2540|
+|9| · Dargen D'Amico|2480|
+|10| · Sal Da Vinci|2210|
+|11| · LDA e AKA 7even|2040|
+|12| · J-Ax|1597|
+|13| · Ermal Meta|840|
+|14| · Raf|717|
+|15| · Chiello|-53|
+|16| · Sayf|-757|
+|17| · Elettra Lamborghini|-803|
+|18| · Tredici Pietro|-1017|
+|19| · Mara Sattei|-1083|
+|20| · Nayt|-1250|
+|21| · Samurai Jay|-1320|
+|22| · Patty Pravo|-1633|
+|23| · Fedez &amp; Masini|-1650|
+|24| · Francesco Renga|-2543|
+|25| · Enrico Nigiotti|-3043|
+|26| · Michele Bravi|-3707|
+|27| · Leo Gassmann|-3890|
+|28| · Tommaso Paradiso|-4867|
+|29| · Eddie Brock|-6863|
+|30| · Luchè|-7897| || **Regolamento:**
+
+Una scelta al giorno, il più votato/più citato nei commenti verrà inserito nella tabella!  
+In caso di parità vincerà il concorrente più citato, in caso di ulteriore parità si sorteggerà il vincitore.
+
+Bisogna proporre concorrenti di questa edizione di Sanremo!
+
+**Lista Concorrenti:**  
+Tommaso Paradiso  
+Chiello  
+Serena Brancale  
+Fulminacci  
+Ditonellapiaga  
+Fedez &amp; Masini  
+Leo Gassmann  
+Sayf  
+Arisa  
+Tredici Pietro  
+Sal Da Vinci  
+Samurai Jay  
+Malika Ayane  
+Luchè  
+Raf  
+Bambole di Pezza  
+Ermal Meta  
+Nayt  
+Elettra Lamborghini  
+Michele Bravi  
+J-Ax  
+Enrico Nigiotti  
+Maria Antonietta &amp; Colombre  
+Francesco Renga  
+Mara Sattei  
+LDA &amp; Aka 7even  
+Dargen D’Amico  
+Levante  
+Eddie Brock  
+Patty Pravo"
+Leo Gassmann,Naturale,3,110,5451,1.0,positivo,"#🏆 LA CLASSIFICA DEL SUB  
+
+**MIGLIOR CANZONE**
+
+|Posizione|Partecipante|Punteggio|
+|:-|:-|:-|
+|🥇| · Dito nella piaga|5777|
+|🥈| · Fulminacci|3747|
+|🥉| · Maria Antonietta &amp; Colombre|3667|
+|4| · Malika Ayane|3307|
+|5| · Levante|2200|
+|6| · Dargen D'Amico|1953|
+|7| · Bambole di Pezza|1903|
+|8| · Tredici Pietro|1703|
+|9| · Sal Da Vinci|1227|
+|10| · Arisa|723|
+|11| · Serena Brancale|583|
+|12| · Sayf|563|
+|13| · Chiello|533|
+|14| · Raf|217|
+|15| · Ermal Meta|27|
+|16| · J-Ax|-103|
+|17| · LDA e AKA 7even|-120|
+|18| · Nayt|-667|
+|19| · Samurai Jay|-1977|
+|20| · Fedez &amp; Masini|-2367|
+|21| · Mara Sattei|-2780|
+|22| · Patty Pravo|-3267|
+|23| · Enrico Nigiotti|-3390|
+|24| · Elettra Lamborghini|-3600|
+|25| · Michele Bravi|-4027|
+|26| · Francesco Renga|-4097|
+|27| · Tommaso Paradiso|-4133|
+|28| · Leo Gassmann|-4333|
+|29| · Luchè|-6490|
+|30| · Eddie Brock|-6520|
+
+---
+
+**MIGLIOR ESIBIZIONE**
+
+|Posizione|Partecipante|Punteggio|
+|:-|:-|:-|
+|🥇| · Dito nella piaga|6083|
+|🥈| · Arisa|4647|
+|🥉| · Levante|4157|
+|4| · Malika Ayane|3663|
+|5| · Maria Antonietta &amp; Colombre|3637|
+|6| · Bambole di Pezza|3467|
+|7| · Fulminacci|3223|
+|8| · Serena Brancale|2540|
+|9| · Dargen D'Amico|2480|
+|10| · Sal Da Vinci|2210|
+|11| · LDA e AKA 7even|2040|
+|12| · J-Ax|1597|
+|13| · Ermal Meta|840|
+|14| · Raf|717|
+|15| · Chiello|-53|
+|16| · Sayf|-757|
+|17| · Elettra Lamborghini|-803|
+|18| · Tredici Pietro|-1017|
+|19| · Mara Sattei|-1083|
+|20| · Nayt|-1250|
+|21| · Samurai Jay|-1320|
+|22| · Patty Pravo|-1633|
+|23| · Fedez &amp; Masini|-1650|
+|24| · Francesco Renga|-2543|
+|25| · Enrico Nigiotti|-3043|
+|26| · Michele Bravi|-3707|
+|27| · Leo Gassmann|-3890|
+|28| · Tommaso Paradiso|-4867|
+|29| · Eddie Brock|-6863|
+|30| · Luchè|-7897| || **Regolamento:**
+
+Una scelta al giorno, il più votato/più citato nei commenti verrà inserito nella tabella!  
+In caso di parità vincerà il concorrente più citato, in caso di ulteriore parità si sorteggerà il vincitore.
+
+Bisogna proporre concorrenti di questa edizione di Sanremo!
+
+**Lista Concorrenti:**  
+Tommaso Paradiso  
+Chiello  
+Serena Brancale  
+Fulminacci  
+Ditonellapiaga  
+Fedez &amp; Masini  
+Leo Gassmann  
+Sayf  
+Arisa  
+Tredici Pietro  
+Sal Da Vinci  
+Samurai Jay  
+Malika Ayane  
+Luchè  
+Raf  
+Bambole di Pezza  
+Ermal Meta  
+Nayt  
+Elettra Lamborghini  
+Michele Bravi  
+J-Ax  
+Enrico Nigiotti  
+Maria Antonietta &amp; Colombre  
+Francesco Renga  
+Mara Sattei  
+LDA &amp; Aka 7even  
+Dargen D’Amico  
+Levante  
+Eddie Brock  
+Patty Pravo"
+Levante,Sei tu,3,110,5451,1.0,positivo,"#🏆 LA CLASSIFICA DEL SUB  
+
+**MIGLIOR CANZONE**
+
+|Posizione|Partecipante|Punteggio|
+|:-|:-|:-|
+|🥇| · Dito nella piaga|5777|
+|🥈| · Fulminacci|3747|
+|🥉| · Maria Antonietta &amp; Colombre|3667|
+|4| · Malika Ayane|3307|
+|5| · Levante|2200|
+|6| · Dargen D'Amico|1953|
+|7| · Bambole di Pezza|1903|
+|8| · Tredici Pietro|1703|
+|9| · Sal Da Vinci|1227|
+|10| · Arisa|723|
+|11| · Serena Brancale|583|
+|12| · Sayf|563|
+|13| · Chiello|533|
+|14| · Raf|217|
+|15| · Ermal Meta|27|
+|16| · J-Ax|-103|
+|17| · LDA e AKA 7even|-120|
+|18| · Nayt|-667|
+|19| · Samurai Jay|-1977|
+|20| · Fedez &amp; Masini|-2367|
+|21| · Mara Sattei|-2780|
+|22| · Patty Pravo|-3267|
+|23| · Enrico Nigiotti|-3390|
+|24| · Elettra Lamborghini|-3600|
+|25| · Michele Bravi|-4027|
+|26| · Francesco Renga|-4097|
+|27| · Tommaso Paradiso|-4133|
+|28| · Leo Gassmann|-4333|
+|29| · Luchè|-6490|
+|30| · Eddie Brock|-6520|
+
+---
+
+**MIGLIOR ESIBIZIONE**
+
+|Posizione|Partecipante|Punteggio|
+|:-|:-|:-|
+|🥇| · Dito nella piaga|6083|
+|🥈| · Arisa|4647|
+|🥉| · Levante|4157|
+|4| · Malika Ayane|3663|
+|5| · Maria Antonietta &amp; Colombre|3637|
+|6| · Bambole di Pezza|3467|
+|7| · Fulminacci|3223|
+|8| · Serena Brancale|2540|
+|9| · Dargen D'Amico|2480|
+|10| · Sal Da Vinci|2210|
+|11| · LDA e AKA 7even|2040|
+|12| · J-Ax|1597|
+|13| · Ermal Meta|840|
+|14| · Raf|717|
+|15| · Chiello|-53|
+|16| · Sayf|-757|
+|17| · Elettra Lamborghini|-803|
+|18| · Tredici Pietro|-1017|
+|19| · Mara Sattei|-1083|
+|20| · Nayt|-1250|
+|21| · Samurai Jay|-1320|
+|22| · Patty Pravo|-1633|
+|23| · Fedez &amp; Masini|-1650|
+|24| · Francesco Renga|-2543|
+|25| · Enrico Nigiotti|-3043|
+|26| · Michele Bravi|-3707|
+|27| · Leo Gassmann|-3890|
+|28| · Tommaso Paradiso|-4867|
+|29| · Eddie Brock|-6863|
+|30| · Luchè|-7897| || **Regolamento:**
+
+Una scelta al giorno, il più votato/più citato nei commenti verrà inserito nella tabella!  
+In caso di parità vincerà il concorrente più citato, in caso di ulteriore parità si sorteggerà il vincitore.
+
+Bisogna proporre concorrenti di questa edizione di Sanremo!
+
+**Lista Concorrenti:**  
+Tommaso Paradiso  
+Chiello  
+Serena Brancale  
+Fulminacci  
+Ditonellapiaga  
+Fedez &amp; Masini  
+Leo Gassmann  
+Sayf  
+Arisa  
+Tredici Pietro  
+Sal Da Vinci  
+Samurai Jay  
+Malika Ayane  
+Luchè  
+Raf  
+Bambole di Pezza  
+Ermal Meta  
+Nayt  
+Elettra Lamborghini  
+Michele Bravi  
+J-Ax  
+Enrico Nigiotti  
+Maria Antonietta &amp; Colombre  
+Francesco Renga  
+Mara Sattei  
+LDA &amp; Aka 7even  
+Dargen D’Amico  
+Levante  
+Eddie Brock  
+Patty Pravo"
+Luchè,Labirinto,3,110,5451,1.0,positivo,"#🏆 LA CLASSIFICA DEL SUB  
+
+**MIGLIOR CANZONE**
+
+|Posizione|Partecipante|Punteggio|
+|:-|:-|:-|
+|🥇| · Dito nella piaga|5777|
+|🥈| · Fulminacci|3747|
+|🥉| · Maria Antonietta &amp; Colombre|3667|
+|4| · Malika Ayane|3307|
+|5| · Levante|2200|
+|6| · Dargen D'Amico|1953|
+|7| · Bambole di Pezza|1903|
+|8| · Tredici Pietro|1703|
+|9| · Sal Da Vinci|1227|
+|10| · Arisa|723|
+|11| · Serena Brancale|583|
+|12| · Sayf|563|
+|13| · Chiello|533|
+|14| · Raf|217|
+|15| · Ermal Meta|27|
+|16| · J-Ax|-103|
+|17| · LDA e AKA 7even|-120|
+|18| · Nayt|-667|
+|19| · Samurai Jay|-1977|
+|20| · Fedez &amp; Masini|-2367|
+|21| · Mara Sattei|-2780|
+|22| · Patty Pravo|-3267|
+|23| · Enrico Nigiotti|-3390|
+|24| · Elettra Lamborghini|-3600|
+|25| · Michele Bravi|-4027|
+|26| · Francesco Renga|-4097|
+|27| · Tommaso Paradiso|-4133|
+|28| · Leo Gassmann|-4333|
+|29| · Luchè|-6490|
+|30| · Eddie Brock|-6520|
+
+---
+
+**MIGLIOR ESIBIZIONE**
+
+|Posizione|Partecipante|Punteggio|
+|:-|:-|:-|
+|🥇| · Dito nella piaga|6083|
+|🥈| · Arisa|4647|
+|🥉| · Levante|4157|
+|4| · Malika Ayane|3663|
+|5| · Maria Antonietta &amp; Colombre|3637|
+|6| · Bambole di Pezza|3467|
+|7| · Fulminacci|3223|
+|8| · Serena Brancale|2540|
+|9| · Dargen D'Amico|2480|
+|10| · Sal Da Vinci|2210|
+|11| · LDA e AKA 7even|2040|
+|12| · J-Ax|1597|
+|13| · Ermal Meta|840|
+|14| · Raf|717|
+|15| · Chiello|-53|
+|16| · Sayf|-757|
+|17| · Elettra Lamborghini|-803|
+|18| · Tredici Pietro|-1017|
+|19| · Mara Sattei|-1083|
+|20| · Nayt|-1250|
+|21| · Samurai Jay|-1320|
+|22| · Patty Pravo|-1633|
+|23| · Fedez &amp; Masini|-1650|
+|24| · Francesco Renga|-2543|
+|25| · Enrico Nigiotti|-3043|
+|26| · Michele Bravi|-3707|
+|27| · Leo Gassmann|-3890|
+|28| · Tommaso Paradiso|-4867|
+|29| · Eddie Brock|-6863|
+|30| · Luchè|-7897| || **Regolamento:**
+
+Una scelta al giorno, il più votato/più citato nei commenti verrà inserito nella tabella!  
+In caso di parità vincerà il concorrente più citato, in caso di ulteriore parità si sorteggerà il vincitore.
+
+Bisogna proporre concorrenti di questa edizione di Sanremo!
+
+**Lista Concorrenti:**  
+Tommaso Paradiso  
+Chiello  
+Serena Brancale  
+Fulminacci  
+Ditonellapiaga  
+Fedez &amp; Masini  
+Leo Gassmann  
+Sayf  
+Arisa  
+Tredici Pietro  
+Sal Da Vinci  
+Samurai Jay  
+Malika Ayane  
+Luchè  
+Raf  
+Bambole di Pezza  
+Ermal Meta  
+Nayt  
+Elettra Lamborghini  
+Michele Bravi  
+J-Ax  
+Enrico Nigiotti  
+Maria Antonietta &amp; Colombre  
+Francesco Renga  
+Mara Sattei  
+LDA &amp; Aka 7even  
+Dargen D’Amico  
+Levante  
+Eddie Brock  
+Patty Pravo"
+Malika Ayane,Animali notturni,3,110,5451,1.0,positivo,"#🏆 LA CLASSIFICA DEL SUB  
+
+**MIGLIOR CANZONE**
+
+|Posizione|Partecipante|Punteggio|
+|:-|:-|:-|
+|🥇| · Dito nella piaga|5777|
+|🥈| · Fulminacci|3747|
+|🥉| · Maria Antonietta &amp; Colombre|3667|
+|4| · Malika Ayane|3307|
+|5| · Levante|2200|
+|6| · Dargen D'Amico|1953|
+|7| · Bambole di Pezza|1903|
+|8| · Tredici Pietro|1703|
+|9| · Sal Da Vinci|1227|
+|10| · Arisa|723|
+|11| · Serena Brancale|583|
+|12| · Sayf|563|
+|13| · Chiello|533|
+|14| · Raf|217|
+|15| · Ermal Meta|27|
+|16| · J-Ax|-103|
+|17| · LDA e AKA 7even|-120|
+|18| · Nayt|-667|
+|19| · Samurai Jay|-1977|
+|20| · Fedez &amp; Masini|-2367|
+|21| · Mara Sattei|-2780|
+|22| · Patty Pravo|-3267|
+|23| · Enrico Nigiotti|-3390|
+|24| · Elettra Lamborghini|-3600|
+|25| · Michele Bravi|-4027|
+|26| · Francesco Renga|-4097|
+|27| · Tommaso Paradiso|-4133|
+|28| · Leo Gassmann|-4333|
+|29| · Luchè|-6490|
+|30| · Eddie Brock|-6520|
+
+---
+
+**MIGLIOR ESIBIZIONE**
+
+|Posizione|Partecipante|Punteggio|
+|:-|:-|:-|
+|🥇| · Dito nella piaga|6083|
+|🥈| · Arisa|4647|
+|🥉| · Levante|4157|
+|4| · Malika Ayane|3663|
+|5| · Maria Antonietta &amp; Colombre|3637|
+|6| · Bambole di Pezza|3467|
+|7| · Fulminacci|3223|
+|8| · Serena Brancale|2540|
+|9| · Dargen D'Amico|2480|
+|10| · Sal Da Vinci|2210|
+|11| · LDA e AKA 7even|2040|
+|12| · J-Ax|1597|
+|13| · Ermal Meta|840|
+|14| · Raf|717|
+|15| · Chiello|-53|
+|16| · Sayf|-757|
+|17| · Elettra Lamborghini|-803|
+|18| · Tredici Pietro|-1017|
+|19| · Mara Sattei|-1083|
+|20| · Nayt|-1250|
+|21| · Samurai Jay|-1320|
+|22| · Patty Pravo|-1633|
+|23| · Fedez &amp; Masini|-1650|
+|24| · Francesco Renga|-2543|
+|25| · Enrico Nigiotti|-3043|
+|26| · Michele Bravi|-3707|
+|27| · Leo Gassmann|-3890|
+|28| · Tommaso Paradiso|-4867|
+|29| · Eddie Brock|-6863|
+|30| · Luchè|-7897| || **Regolamento:**
+
+Una scelta al giorno, il più votato/più citato nei commenti verrà inserito nella tabella!  
+In caso di parità vincerà il concorrente più citato, in caso di ulteriore parità si sorteggerà il vincitore.
+
+Bisogna proporre concorrenti di questa edizione di Sanremo!
+
+**Lista Concorrenti:**  
+Tommaso Paradiso  
+Chiello  
+Serena Brancale  
+Fulminacci  
+Ditonellapiaga  
+Fedez &amp; Masini  
+Leo Gassmann  
+Sayf  
+Arisa  
+Tredici Pietro  
+Sal Da Vinci  
+Samurai Jay  
+Malika Ayane  
+Luchè  
+Raf  
+Bambole di Pezza  
+Ermal Meta  
+Nayt  
+Elettra Lamborghini  
+Michele Bravi  
+J-Ax  
+Enrico Nigiotti  
+Maria Antonietta &amp; Colombre  
+Francesco Renga  
+Mara Sattei  
+LDA &amp; Aka 7even  
+Dargen D’Amico  
+Levante  
+Eddie Brock  
+Patty Pravo"
+Mara Sattei,Le cose che non sai di me,3,110,5451,1.0,positivo,"#🏆 LA CLASSIFICA DEL SUB  
+
+**MIGLIOR CANZONE**
+
+|Posizione|Partecipante|Punteggio|
+|:-|:-|:-|
+|🥇| · Dito nella piaga|5777|
+|🥈| · Fulminacci|3747|
+|🥉| · Maria Antonietta &amp; Colombre|3667|
+|4| · Malika Ayane|3307|
+|5| · Levante|2200|
+|6| · Dargen D'Amico|1953|
+|7| · Bambole di Pezza|1903|
+|8| · Tredici Pietro|1703|
+|9| · Sal Da Vinci|1227|
+|10| · Arisa|723|
+|11| · Serena Brancale|583|
+|12| · Sayf|563|
+|13| · Chiello|533|
+|14| · Raf|217|
+|15| · Ermal Meta|27|
+|16| · J-Ax|-103|
+|17| · LDA e AKA 7even|-120|
+|18| · Nayt|-667|
+|19| · Samurai Jay|-1977|
+|20| · Fedez &amp; Masini|-2367|
+|21| · Mara Sattei|-2780|
+|22| · Patty Pravo|-3267|
+|23| · Enrico Nigiotti|-3390|
+|24| · Elettra Lamborghini|-3600|
+|25| · Michele Bravi|-4027|
+|26| · Francesco Renga|-4097|
+|27| · Tommaso Paradiso|-4133|
+|28| · Leo Gassmann|-4333|
+|29| · Luchè|-6490|
+|30| · Eddie Brock|-6520|
+
+---
+
+**MIGLIOR ESIBIZIONE**
+
+|Posizione|Partecipante|Punteggio|
+|:-|:-|:-|
+|🥇| · Dito nella piaga|6083|
+|🥈| · Arisa|4647|
+|🥉| · Levante|4157|
+|4| · Malika Ayane|3663|
+|5| · Maria Antonietta &amp; Colombre|3637|
+|6| · Bambole di Pezza|3467|
+|7| · Fulminacci|3223|
+|8| · Serena Brancale|2540|
+|9| · Dargen D'Amico|2480|
+|10| · Sal Da Vinci|2210|
+|11| · LDA e AKA 7even|2040|
+|12| · J-Ax|1597|
+|13| · Ermal Meta|840|
+|14| · Raf|717|
+|15| · Chiello|-53|
+|16| · Sayf|-757|
+|17| · Elettra Lamborghini|-803|
+|18| · Tredici Pietro|-1017|
+|19| · Mara Sattei|-1083|
+|20| · Nayt|-1250|
+|21| · Samurai Jay|-1320|
+|22| · Patty Pravo|-1633|
+|23| · Fedez &amp; Masini|-1650|
+|24| · Francesco Renga|-2543|
+|25| · Enrico Nigiotti|-3043|
+|26| · Michele Bravi|-3707|
+|27| · Leo Gassmann|-3890|
+|28| · Tommaso Paradiso|-4867|
+|29| · Eddie Brock|-6863|
+|30| · Luchè|-7897| || **Regolamento:**
+
+Una scelta al giorno, il più votato/più citato nei commenti verrà inserito nella tabella!  
+In caso di parità vincerà il concorrente più citato, in caso di ulteriore parità si sorteggerà il vincitore.
+
+Bisogna proporre concorrenti di questa edizione di Sanremo!
+
+**Lista Concorrenti:**  
+Tommaso Paradiso  
+Chiello  
+Serena Brancale  
+Fulminacci  
+Ditonellapiaga  
+Fedez &amp; Masini  
+Leo Gassmann  
+Sayf  
+Arisa  
+Tredici Pietro  
+Sal Da Vinci  
+Samurai Jay  
+Malika Ayane  
+Luchè  
+Raf  
+Bambole di Pezza  
+Ermal Meta  
+Nayt  
+Elettra Lamborghini  
+Michele Bravi  
+J-Ax  
+Enrico Nigiotti  
+Maria Antonietta &amp; Colombre  
+Francesco Renga  
+Mara Sattei  
+LDA &amp; Aka 7even  
+Dargen D’Amico  
+Levante  
+Eddie Brock  
+Patty Pravo"
+Maria Antonietta e Colombre,La felicità e basta,3,110,5451,1.0,positivo,"#🏆 LA CLASSIFICA DEL SUB  
+
+**MIGLIOR CANZONE**
+
+|Posizione|Partecipante|Punteggio|
+|:-|:-|:-|
+|🥇| · Dito nella piaga|5777|
+|🥈| · Fulminacci|3747|
+|🥉| · Maria Antonietta &amp; Colombre|3667|
+|4| · Malika Ayane|3307|
+|5| · Levante|2200|
+|6| · Dargen D'Amico|1953|
+|7| · Bambole di Pezza|1903|
+|8| · Tredici Pietro|1703|
+|9| · Sal Da Vinci|1227|
+|10| · Arisa|723|
+|11| · Serena Brancale|583|
+|12| · Sayf|563|
+|13| · Chiello|533|
+|14| · Raf|217|
+|15| · Ermal Meta|27|
+|16| · J-Ax|-103|
+|17| · LDA e AKA 7even|-120|
+|18| · Nayt|-667|
+|19| · Samurai Jay|-1977|
+|20| · Fedez &amp; Masini|-2367|
+|21| · Mara Sattei|-2780|
+|22| · Patty Pravo|-3267|
+|23| · Enrico Nigiotti|-3390|
+|24| · Elettra Lamborghini|-3600|
+|25| · Michele Bravi|-4027|
+|26| · Francesco Renga|-4097|
+|27| · Tommaso Paradiso|-4133|
+|28| · Leo Gassmann|-4333|
+|29| · Luchè|-6490|
+|30| · Eddie Brock|-6520|
+
+---
+
+**MIGLIOR ESIBIZIONE**
+
+|Posizione|Partecipante|Punteggio|
+|:-|:-|:-|
+|🥇| · Dito nella piaga|6083|
+|🥈| · Arisa|4647|
+|🥉| · Levante|4157|
+|4| · Malika Ayane|3663|
+|5| · Maria Antonietta &amp; Colombre|3637|
+|6| · Bambole di Pezza|3467|
+|7| · Fulminacci|3223|
+|8| · Serena Brancale|2540|
+|9| · Dargen D'Amico|2480|
+|10| · Sal Da Vinci|2210|
+|11| · LDA e AKA 7even|2040|
+|12| · J-Ax|1597|
+|13| · Ermal Meta|840|
+|14| · Raf|717|
+|15| · Chiello|-53|
+|16| · Sayf|-757|
+|17| · Elettra Lamborghini|-803|
+|18| · Tredici Pietro|-1017|
+|19| · Mara Sattei|-1083|
+|20| · Nayt|-1250|
+|21| · Samurai Jay|-1320|
+|22| · Patty Pravo|-1633|
+|23| · Fedez &amp; Masini|-1650|
+|24| · Francesco Renga|-2543|
+|25| · Enrico Nigiotti|-3043|
+|26| · Michele Bravi|-3707|
+|27| · Leo Gassmann|-3890|
+|28| · Tommaso Paradiso|-4867|
+|29| · Eddie Brock|-6863|
+|30| · Luchè|-7897| || **Regolamento:**
+
+Una scelta al giorno, il più votato/più citato nei commenti verrà inserito nella tabella!  
+In caso di parità vincerà il concorrente più citato, in caso di ulteriore parità si sorteggerà il vincitore.
+
+Bisogna proporre concorrenti di questa edizione di Sanremo!
+
+**Lista Concorrenti:**  
+Tommaso Paradiso  
+Chiello  
+Serena Brancale  
+Fulminacci  
+Ditonellapiaga  
+Fedez &amp; Masini  
+Leo Gassmann  
+Sayf  
+Arisa  
+Tredici Pietro  
+Sal Da Vinci  
+Samurai Jay  
+Malika Ayane  
+Luchè  
+Raf  
+Bambole di Pezza  
+Ermal Meta  
+Nayt  
+Elettra Lamborghini  
+Michele Bravi  
+J-Ax  
+Enrico Nigiotti  
+Maria Antonietta &amp; Colombre  
+Francesco Renga  
+Mara Sattei  
+LDA &amp; Aka 7even  
+Dargen D’Amico  
+Levante  
+Eddie Brock  
+Patty Pravo"
+Michele Bravi,Prima o poi,3,110,5451,0.882,positivo,"Michele Bravi è un ragazzo d'oro, nonostante lavori dall'età di tre anni come spazza comignoli nella parte sud di Hell's Kitchen per aiutare la sua famiglia a sbarcare il lunario ha comunque trovato la strada per arrivare al successo, spinto dalla determinazione e dalla sua incredibile forza di volontà. Non si è fatto fermare neanche dall'incendio che ha coinvolto il suo intero guardaroba e ha preso in prestito il vestito buono di suo prozio Marcello, che attualmente lavora giù con i ragazzi alla tredicesima strada come tirapiedi di Franky Manidiporco e si è presentato qui davanti a noi con il cuore in mano per toccare le corde della nostra anima. Che persona splendida. || Arisa bravissima ma la canzone è orrenda!! || #🏆 LA CLASSIFICA DEL SUB  
+
+**MIGLIOR CANZONE**
+
+|Posizione|Partecipante|Punteggio|
+|:-|:-|:-|
+|🥇| · Dito nella piaga|5777|
+|🥈| · Fulminacci|3747|
+|🥉| · Maria Antonietta &amp; Colombre|3667|
+|4| · Malika Ayane|3307|
+|5| · Levante|2200|
+|6| · Dargen D'Amico|1953|
+|7| · Bambole di Pezza|1903|
+|8| · Tredici Pietro|1703|
+|9| · Sal Da Vinci|1227|
+|10| · Arisa|723|
+|11| · Serena Brancale|583|
+|12| · Sayf|563|
+|13| · Chiello|533|
+|14| · Raf|217|
+|15| · Ermal Meta|27|
+|16| · J-Ax|-103|
+|17| · LDA e AKA 7even|-120|
+|18| · Nayt|-667|
+|19| · Samurai Jay|-1977|
+|20| · Fedez &amp; Masini|-2367|
+|21| · Mara Sattei|-2780|
+|22| · Patty Pravo|-3267|
+|23| · Enrico Nigiotti|-3390|
+|24| · Elettra Lamborghini|-3600|
+|25| · Michele Bravi|-4027|
+|26| · Francesco Renga|-4097|
+|27| · Tommaso Paradiso|-4133|
+|28| · Leo Gassmann|-4333|
+|29| · Luchè|-6490|
+|30| · Eddie Brock|-6520|
+
+---
+
+**MIGLIOR ESIBIZIONE**
+
+|Posizione|Partecipante|Punteggio|
+|:-|:-|:-|
+|🥇| · Dito nella piaga|6083|
+|🥈| · Arisa|4647|
+|🥉| · Levante|4157|
+|4| · Malika Ayane|3663|
+|5| · Maria Antonietta &amp; Colombre|3637|
+|6| · Bambole di Pezza|3467|
+|7| · Fulminacci|3223|
+|8| · Serena Brancale|2540|
+|9| · Dargen D'Amico|2480|
+|10| · Sal Da Vinci|2210|
+|11| · LDA e AKA 7even|2040|
+|12| · J-Ax|1597|
+|13| · Ermal Meta|840|
+|14| · Raf|717|
+|15| · Chiello|-53|
+|16| · Sayf|-757|
+|17| · Elettra Lamborghini|-803|
+|18| · Tredici Pietro|-1017|
+|19| · Mara Sattei|-1083|
+|20| · Nayt|-1250|
+|21| · Samurai Jay|-1320|
+|22| · Patty Pravo|-1633|
+|23| · Fedez &amp; Masini|-1650|
+|24| · Francesco Renga|-2543|
+|25| · Enrico Nigiotti|-3043|
+|26| · Michele Bravi|-3707|
+|27| · Leo Gassmann|-3890|
+|28| · Tommaso Paradiso|-4867|
+|29| · Eddie Brock|-6863|
+|30| · Luchè|-7897|"
+Nayt,Prima che,3,110,5451,1.0,positivo,"#🏆 LA CLASSIFICA DEL SUB  
+
+**MIGLIOR CANZONE**
+
+|Posizione|Partecipante|Punteggio|
+|:-|:-|:-|
+|🥇| · Dito nella piaga|5777|
+|🥈| · Fulminacci|3747|
+|🥉| · Maria Antonietta &amp; Colombre|3667|
+|4| · Malika Ayane|3307|
+|5| · Levante|2200|
+|6| · Dargen D'Amico|1953|
+|7| · Bambole di Pezza|1903|
+|8| · Tredici Pietro|1703|
+|9| · Sal Da Vinci|1227|
+|10| · Arisa|723|
+|11| · Serena Brancale|583|
+|12| · Sayf|563|
+|13| · Chiello|533|
+|14| · Raf|217|
+|15| · Ermal Meta|27|
+|16| · J-Ax|-103|
+|17| · LDA e AKA 7even|-120|
+|18| · Nayt|-667|
+|19| · Samurai Jay|-1977|
+|20| · Fedez &amp; Masini|-2367|
+|21| · Mara Sattei|-2780|
+|22| · Patty Pravo|-3267|
+|23| · Enrico Nigiotti|-3390|
+|24| · Elettra Lamborghini|-3600|
+|25| · Michele Bravi|-4027|
+|26| · Francesco Renga|-4097|
+|27| · Tommaso Paradiso|-4133|
+|28| · Leo Gassmann|-4333|
+|29| · Luchè|-6490|
+|30| · Eddie Brock|-6520|
+
+---
+
+**MIGLIOR ESIBIZIONE**
+
+|Posizione|Partecipante|Punteggio|
+|:-|:-|:-|
+|🥇| · Dito nella piaga|6083|
+|🥈| · Arisa|4647|
+|🥉| · Levante|4157|
+|4| · Malika Ayane|3663|
+|5| · Maria Antonietta &amp; Colombre|3637|
+|6| · Bambole di Pezza|3467|
+|7| · Fulminacci|3223|
+|8| · Serena Brancale|2540|
+|9| · Dargen D'Amico|2480|
+|10| · Sal Da Vinci|2210|
+|11| · LDA e AKA 7even|2040|
+|12| · J-Ax|1597|
+|13| · Ermal Meta|840|
+|14| · Raf|717|
+|15| · Chiello|-53|
+|16| · Sayf|-757|
+|17| · Elettra Lamborghini|-803|
+|18| · Tredici Pietro|-1017|
+|19| · Mara Sattei|-1083|
+|20| · Nayt|-1250|
+|21| · Samurai Jay|-1320|
+|22| · Patty Pravo|-1633|
+|23| · Fedez &amp; Masini|-1650|
+|24| · Francesco Renga|-2543|
+|25| · Enrico Nigiotti|-3043|
+|26| · Michele Bravi|-3707|
+|27| · Leo Gassmann|-3890|
+|28| · Tommaso Paradiso|-4867|
+|29| · Eddie Brock|-6863|
+|30| · Luchè|-7897| || **Regolamento:**
+
+Una scelta al giorno, il più votato/più citato nei commenti verrà inserito nella tabella!  
+In caso di parità vincerà il concorrente più citato, in caso di ulteriore parità si sorteggerà il vincitore.
+
+Bisogna proporre concorrenti di questa edizione di Sanremo!
+
+**Lista Concorrenti:**  
+Tommaso Paradiso  
+Chiello  
+Serena Brancale  
+Fulminacci  
+Ditonellapiaga  
+Fedez &amp; Masini  
+Leo Gassmann  
+Sayf  
+Arisa  
+Tredici Pietro  
+Sal Da Vinci  
+Samurai Jay  
+Malika Ayane  
+Luchè  
+Raf  
+Bambole di Pezza  
+Ermal Meta  
+Nayt  
+Elettra Lamborghini  
+Michele Bravi  
+J-Ax  
+Enrico Nigiotti  
+Maria Antonietta &amp; Colombre  
+Francesco Renga  
+Mara Sattei  
+LDA &amp; Aka 7even  
+Dargen D’Amico  
+Levante  
+Eddie Brock  
+Patty Pravo"
+Patty Pravo,Opera,3,110,5451,1.0,positivo,"patty pravo ha votato monarchia o repubblica? || Non tutti sanno che Patty Pravo è il fiore all'occhiello della Industrial light and magic di George Lucas in campo di animatronics. Per realizzare i movimenti facciali dell'esemplare utilizzato per la prima serata del festival di Sanremo sono stati utilizzati 14 servomotori alimentari da 12 celle al litio e comandati da una scheda elettronica miniaturizzata sapientemente nascosta nella capigliatura della marionetta. Che passi avanti che ha fatto la tecnologia. || #🏆 LA CLASSIFICA DEL SUB  
+
+**MIGLIOR CANZONE**
+
+|Posizione|Partecipante|Punteggio|
+|:-|:-|:-|
+|🥇| · Dito nella piaga|5777|
+|🥈| · Fulminacci|3747|
+|🥉| · Maria Antonietta &amp; Colombre|3667|
+|4| · Malika Ayane|3307|
+|5| · Levante|2200|
+|6| · Dargen D'Amico|1953|
+|7| · Bambole di Pezza|1903|
+|8| · Tredici Pietro|1703|
+|9| · Sal Da Vinci|1227|
+|10| · Arisa|723|
+|11| · Serena Brancale|583|
+|12| · Sayf|563|
+|13| · Chiello|533|
+|14| · Raf|217|
+|15| · Ermal Meta|27|
+|16| · J-Ax|-103|
+|17| · LDA e AKA 7even|-120|
+|18| · Nayt|-667|
+|19| · Samurai Jay|-1977|
+|20| · Fedez &amp; Masini|-2367|
+|21| · Mara Sattei|-2780|
+|22| · Patty Pravo|-3267|
+|23| · Enrico Nigiotti|-3390|
+|24| · Elettra Lamborghini|-3600|
+|25| · Michele Bravi|-4027|
+|26| · Francesco Renga|-4097|
+|27| · Tommaso Paradiso|-4133|
+|28| · Leo Gassmann|-4333|
+|29| · Luchè|-6490|
+|30| · Eddie Brock|-6520|
+
+---
+
+**MIGLIOR ESIBIZIONE**
+
+|Posizione|Partecipante|Punteggio|
+|:-|:-|:-|
+|🥇| · Dito nella piaga|6083|
+|🥈| · Arisa|4647|
+|🥉| · Levante|4157|
+|4| · Malika Ayane|3663|
+|5| · Maria Antonietta &amp; Colombre|3637|
+|6| · Bambole di Pezza|3467|
+|7| · Fulminacci|3223|
+|8| · Serena Brancale|2540|
+|9| · Dargen D'Amico|2480|
+|10| · Sal Da Vinci|2210|
+|11| · LDA e AKA 7even|2040|
+|12| · J-Ax|1597|
+|13| · Ermal Meta|840|
+|14| · Raf|717|
+|15| · Chiello|-53|
+|16| · Sayf|-757|
+|17| · Elettra Lamborghini|-803|
+|18| · Tredici Pietro|-1017|
+|19| · Mara Sattei|-1083|
+|20| · Nayt|-1250|
+|21| · Samurai Jay|-1320|
+|22| · Patty Pravo|-1633|
+|23| · Fedez &amp; Masini|-1650|
+|24| · Francesco Renga|-2543|
+|25| · Enrico Nigiotti|-3043|
+|26| · Michele Bravi|-3707|
+|27| · Leo Gassmann|-3890|
+|28| · Tommaso Paradiso|-4867|
+|29| · Eddie Brock|-6863|
+|30| · Luchè|-7897|"
+Raf,Ora e per sempre,3,110,5451,1.0,positivo,"Nel 1947 Raf, uscendo dalla sede locale del PCI di Sganciabozzi sul Mincio, provincia di Mantova, vide un bambino che calciava con forza una lattina di Coca Cola. ""Come mai colpisci così forte quella lattina, piccolo?"" gli chiese. ""Perchè è il simbolo di un sistema capitalista iperconsumista che non si fa scrupolo nello sfruttare le risorse del pianeta e la forza lavoro a basso prezzo generata dagli squilibri di potere del secolo scorso per arricchire i pochi potenti del mondo a discapito della collettività."" Al che Raf rispose: ""Hai ragione, giovane, ma tu e la tua generazione siete la mia speranza per il futuro, eccoti un dollaro, spendilo per il bene della cosa pubblica!"" e porse al giovane un dollaro d'argento. Quel bambino era Hugo Chavez. || #🏆 LA CLASSIFICA DEL SUB  
+
+**MIGLIOR CANZONE**
+
+|Posizione|Partecipante|Punteggio|
+|:-|:-|:-|
+|🥇| · Dito nella piaga|5777|
+|🥈| · Fulminacci|3747|
+|🥉| · Maria Antonietta &amp; Colombre|3667|
+|4| · Malika Ayane|3307|
+|5| · Levante|2200|
+|6| · Dargen D'Amico|1953|
+|7| · Bambole di Pezza|1903|
+|8| · Tredici Pietro|1703|
+|9| · Sal Da Vinci|1227|
+|10| · Arisa|723|
+|11| · Serena Brancale|583|
+|12| · Sayf|563|
+|13| · Chiello|533|
+|14| · Raf|217|
+|15| · Ermal Meta|27|
+|16| · J-Ax|-103|
+|17| · LDA e AKA 7even|-120|
+|18| · Nayt|-667|
+|19| · Samurai Jay|-1977|
+|20| · Fedez &amp; Masini|-2367|
+|21| · Mara Sattei|-2780|
+|22| · Patty Pravo|-3267|
+|23| · Enrico Nigiotti|-3390|
+|24| · Elettra Lamborghini|-3600|
+|25| · Michele Bravi|-4027|
+|26| · Francesco Renga|-4097|
+|27| · Tommaso Paradiso|-4133|
+|28| · Leo Gassmann|-4333|
+|29| · Luchè|-6490|
+|30| · Eddie Brock|-6520|
+
+---
+
+**MIGLIOR ESIBIZIONE**
+
+|Posizione|Partecipante|Punteggio|
+|:-|:-|:-|
+|🥇| · Dito nella piaga|6083|
+|🥈| · Arisa|4647|
+|🥉| · Levante|4157|
+|4| · Malika Ayane|3663|
+|5| · Maria Antonietta &amp; Colombre|3637|
+|6| · Bambole di Pezza|3467|
+|7| · Fulminacci|3223|
+|8| · Serena Brancale|2540|
+|9| · Dargen D'Amico|2480|
+|10| · Sal Da Vinci|2210|
+|11| · LDA e AKA 7even|2040|
+|12| · J-Ax|1597|
+|13| · Ermal Meta|840|
+|14| · Raf|717|
+|15| · Chiello|-53|
+|16| · Sayf|-757|
+|17| · Elettra Lamborghini|-803|
+|18| · Tredici Pietro|-1017|
+|19| · Mara Sattei|-1083|
+|20| · Nayt|-1250|
+|21| · Samurai Jay|-1320|
+|22| · Patty Pravo|-1633|
+|23| · Fedez &amp; Masini|-1650|
+|24| · Francesco Renga|-2543|
+|25| · Enrico Nigiotti|-3043|
+|26| · Michele Bravi|-3707|
+|27| · Leo Gassmann|-3890|
+|28| · Tommaso Paradiso|-4867|
+|29| · Eddie Brock|-6863|
+|30| · Luchè|-7897| || **Regolamento:**
+
+Una scelta al giorno, il più votato/più citato nei commenti verrà inserito nella tabella!  
+In caso di parità vincerà il concorrente più citato, in caso di ulteriore parità si sorteggerà il vincitore.
+
+Bisogna proporre concorrenti di questa edizione di Sanremo!
+
+**Lista Concorrenti:**  
+Tommaso Paradiso  
+Chiello  
+Serena Brancale  
+Fulminacci  
+Ditonellapiaga  
+Fedez &amp; Masini  
+Leo Gassmann  
+Sayf  
+Arisa  
+Tredici Pietro  
+Sal Da Vinci  
+Samurai Jay  
+Malika Ayane  
+Luchè  
+Raf  
+Bambole di Pezza  
+Ermal Meta  
+Nayt  
+Elettra Lamborghini  
+Michele Bravi  
+J-Ax  
+Enrico Nigiotti  
+Maria Antonietta &amp; Colombre  
+Francesco Renga  
+Mara Sattei  
+LDA &amp; Aka 7even  
+Dargen D’Amico  
+Levante  
+Eddie Brock  
+Patty Pravo"
+Samurai Jay,Ossessione,3,110,5451,1.0,positivo,"Samurai Jay || #🏆 LA CLASSIFICA DEL SUB  
+
+**MIGLIOR CANZONE**
+
+|Posizione|Partecipante|Punteggio|
+|:-|:-|:-|
+|🥇| · Dito nella piaga|5777|
+|🥈| · Fulminacci|3747|
+|🥉| · Maria Antonietta &amp; Colombre|3667|
+|4| · Malika Ayane|3307|
+|5| · Levante|2200|
+|6| · Dargen D'Amico|1953|
+|7| · Bambole di Pezza|1903|
+|8| · Tredici Pietro|1703|
+|9| · Sal Da Vinci|1227|
+|10| · Arisa|723|
+|11| · Serena Brancale|583|
+|12| · Sayf|563|
+|13| · Chiello|533|
+|14| · Raf|217|
+|15| · Ermal Meta|27|
+|16| · J-Ax|-103|
+|17| · LDA e AKA 7even|-120|
+|18| · Nayt|-667|
+|19| · Samurai Jay|-1977|
+|20| · Fedez &amp; Masini|-2367|
+|21| · Mara Sattei|-2780|
+|22| · Patty Pravo|-3267|
+|23| · Enrico Nigiotti|-3390|
+|24| · Elettra Lamborghini|-3600|
+|25| · Michele Bravi|-4027|
+|26| · Francesco Renga|-4097|
+|27| · Tommaso Paradiso|-4133|
+|28| · Leo Gassmann|-4333|
+|29| · Luchè|-6490|
+|30| · Eddie Brock|-6520|
+
+---
+
+**MIGLIOR ESIBIZIONE**
+
+|Posizione|Partecipante|Punteggio|
+|:-|:-|:-|
+|🥇| · Dito nella piaga|6083|
+|🥈| · Arisa|4647|
+|🥉| · Levante|4157|
+|4| · Malika Ayane|3663|
+|5| · Maria Antonietta &amp; Colombre|3637|
+|6| · Bambole di Pezza|3467|
+|7| · Fulminacci|3223|
+|8| · Serena Brancale|2540|
+|9| · Dargen D'Amico|2480|
+|10| · Sal Da Vinci|2210|
+|11| · LDA e AKA 7even|2040|
+|12| · J-Ax|1597|
+|13| · Ermal Meta|840|
+|14| · Raf|717|
+|15| · Chiello|-53|
+|16| · Sayf|-757|
+|17| · Elettra Lamborghini|-803|
+|18| · Tredici Pietro|-1017|
+|19| · Mara Sattei|-1083|
+|20| · Nayt|-1250|
+|21| · Samurai Jay|-1320|
+|22| · Patty Pravo|-1633|
+|23| · Fedez &amp; Masini|-1650|
+|24| · Francesco Renga|-2543|
+|25| · Enrico Nigiotti|-3043|
+|26| · Michele Bravi|-3707|
+|27| · Leo Gassmann|-3890|
+|28| · Tommaso Paradiso|-4867|
+|29| · Eddie Brock|-6863|
+|30| · Luchè|-7897| || **Regolamento:**
+
+Una scelta al giorno, il più votato/più citato nei commenti verrà inserito nella tabella!  
+In caso di parità vincerà il concorrente più citato, in caso di ulteriore parità si sorteggerà il vincitore.
+
+Bisogna proporre concorrenti di questa edizione di Sanremo!
+
+**Lista Concorrenti:**  
+Tommaso Paradiso  
+Chiello  
+Serena Brancale  
+Fulminacci  
+Ditonellapiaga  
+Fedez &amp; Masini  
+Leo Gassmann  
+Sayf  
+Arisa  
+Tredici Pietro  
+Sal Da Vinci  
+Samurai Jay  
+Malika Ayane  
+Luchè  
+Raf  
+Bambole di Pezza  
+Ermal Meta  
+Nayt  
+Elettra Lamborghini  
+Michele Bravi  
+J-Ax  
+Enrico Nigiotti  
+Maria Antonietta &amp; Colombre  
+Francesco Renga  
+Mara Sattei  
+LDA &amp; Aka 7even  
+Dargen D’Amico  
+Levante  
+Eddie Brock  
+Patty Pravo"
+Tredici Pietro,Uomo che cade,3,110,5451,1.0,positivo,"#🏆 LA CLASSIFICA DEL SUB  
+
+**MIGLIOR CANZONE**
+
+|Posizione|Partecipante|Punteggio|
+|:-|:-|:-|
+|🥇| · Dito nella piaga|5777|
+|🥈| · Fulminacci|3747|
+|🥉| · Maria Antonietta &amp; Colombre|3667|
+|4| · Malika Ayane|3307|
+|5| · Levante|2200|
+|6| · Dargen D'Amico|1953|
+|7| · Bambole di Pezza|1903|
+|8| · Tredici Pietro|1703|
+|9| · Sal Da Vinci|1227|
+|10| · Arisa|723|
+|11| · Serena Brancale|583|
+|12| · Sayf|563|
+|13| · Chiello|533|
+|14| · Raf|217|
+|15| · Ermal Meta|27|
+|16| · J-Ax|-103|
+|17| · LDA e AKA 7even|-120|
+|18| · Nayt|-667|
+|19| · Samurai Jay|-1977|
+|20| · Fedez &amp; Masini|-2367|
+|21| · Mara Sattei|-2780|
+|22| · Patty Pravo|-3267|
+|23| · Enrico Nigiotti|-3390|
+|24| · Elettra Lamborghini|-3600|
+|25| · Michele Bravi|-4027|
+|26| · Francesco Renga|-4097|
+|27| · Tommaso Paradiso|-4133|
+|28| · Leo Gassmann|-4333|
+|29| · Luchè|-6490|
+|30| · Eddie Brock|-6520|
+
+---
+
+**MIGLIOR ESIBIZIONE**
+
+|Posizione|Partecipante|Punteggio|
+|:-|:-|:-|
+|🥇| · Dito nella piaga|6083|
+|🥈| · Arisa|4647|
+|🥉| · Levante|4157|
+|4| · Malika Ayane|3663|
+|5| · Maria Antonietta &amp; Colombre|3637|
+|6| · Bambole di Pezza|3467|
+|7| · Fulminacci|3223|
+|8| · Serena Brancale|2540|
+|9| · Dargen D'Amico|2480|
+|10| · Sal Da Vinci|2210|
+|11| · LDA e AKA 7even|2040|
+|12| · J-Ax|1597|
+|13| · Ermal Meta|840|
+|14| · Raf|717|
+|15| · Chiello|-53|
+|16| · Sayf|-757|
+|17| · Elettra Lamborghini|-803|
+|18| · Tredici Pietro|-1017|
+|19| · Mara Sattei|-1083|
+|20| · Nayt|-1250|
+|21| · Samurai Jay|-1320|
+|22| · Patty Pravo|-1633|
+|23| · Fedez &amp; Masini|-1650|
+|24| · Francesco Renga|-2543|
+|25| · Enrico Nigiotti|-3043|
+|26| · Michele Bravi|-3707|
+|27| · Leo Gassmann|-3890|
+|28| · Tommaso Paradiso|-4867|
+|29| · Eddie Brock|-6863|
+|30| · Luchè|-7897| || **Regolamento:**
+
+Una scelta al giorno, il più votato/più citato nei commenti verrà inserito nella tabella!  
+In caso di parità vincerà il concorrente più citato, in caso di ulteriore parità si sorteggerà il vincitore.
+
+Bisogna proporre concorrenti di questa edizione di Sanremo!
+
+**Lista Concorrenti:**  
+Tommaso Paradiso  
+Chiello  
+Serena Brancale  
+Fulminacci  
+Ditonellapiaga  
+Fedez &amp; Masini  
+Leo Gassmann  
+Sayf  
+Arisa  
+Tredici Pietro  
+Sal Da Vinci  
+Samurai Jay  
+Malika Ayane  
+Luchè  
+Raf  
+Bambole di Pezza  
+Ermal Meta  
+Nayt  
+Elettra Lamborghini  
+Michele Bravi  
+J-Ax  
+Enrico Nigiotti  
+Maria Antonietta &amp; Colombre  
+Francesco Renga  
+Mara Sattei  
+LDA &amp; Aka 7even  
+Dargen D’Amico  
+Levante  
+Eddie Brock  
+Patty Pravo"
