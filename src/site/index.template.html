@@ -16,14 +16,14 @@
     }
 
     :root {
-      --bg: #fef4f4;
+      --bg: #f0f4ff;
       --surface: #ffffff;
-      --text: #1a0d0d;
-      --muted: #8b5a5a;
-      --accent: #d32f2f;
-      --accent-h: #b71c1c;
-      --border: #f5d0d0;
-      --chip-bg: #ffeaea;
+      --text: #0d1a33;
+      --muted: #5a6e8b;
+      --accent: #1a56db;
+      --accent-h: #1240a8;
+      --border: #c7d7f5;
+      --chip-bg: #e0eaff;
     }
 
     *,
@@ -215,10 +215,19 @@
       background: var(--chip-bg);
     }
 
+    .report-list__name {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 1rem;
+      font-weight: 500;
+      color: var(--text);
+      flex-shrink: 0;
+    }
+
     .report-list__date {
       font-family: 'DM Mono', monospace;
-      font-size: 0.9rem;
-      color: var(--text);
+      font-size: 0.85rem;
+      color: var(--muted);
+      flex: 1;
     }
 
     .report-list__link {
@@ -324,12 +333,12 @@
     }
 
     .compare__panel--before .compare__label {
-      background: #fff8f7;
-      color: #b34040;
+      background: #eef2fb;
+      color: #3a5080;
     }
 
     .compare__panel--before .compare__label-dot {
-      background: #e05252;
+      background: #6a8abf;
     }
 
     .compare__panel--after .compare__label {
@@ -1016,28 +1025,32 @@
     <section class="section">
       <div class="hero__inner">
         <p class="eyebrow">Caso Studio</p>
-        <h1>Sanremo 2026: l'AI analizza le discussioni Reddit<br>e prevede il vincitore.</h1>
+        <h1>Sanremo 2026: l'AI legge il megathread di r/italy<br>così non devi farlo tu.</h1>
 
         <p class="hero__body">
-          Durante il <strong>Festival di Sanremo 2026</strong>, ogni serata scatena migliaia di post, commenti e
-          discussioni su Reddit — in particolare su <strong>r/italy</strong> e <strong>r/italyMusic</strong>. Chi viene
-          più citato? Chi polarizza il pubblico? Chi raccoglie il sentiment più positivo? Questi segnali sono pubblici
-          e accessibili, ma nessuno li aveva mai aggregati e analizzati in tempo reale.
+          Ogni sera del <strong>Festival di Sanremo 2026</strong>, migliaia di italiani si radunano sul megathread di
+          <strong>r/italy</strong> per commentare in tempo reale — nel bene, nel male e nel "ma chi gliel'ha fatto
+          fare". Chi viene più citato? Chi fa incazzare di più? Chi raccoglie il sentiment più positivo (o chi è il più
+          cringe)? Questi segnali sono pubblici e accessibili, ma qualcuno doveva pur raccoglierli.
         </p>
         <p class="hero__body">
-          Il problema è che i dati sono <strong>testo non strutturato</strong>: migliaia di thread, commenti informali,
-          soprannomi, slang. Estrarre da tutto questo <strong>chi sta vincendo il festival secondo la voce del
-          pubblico</strong> richiede raccolta automatica, normalizzazione e analisi del sentiment in italiano.
+          Il problema è che il megathread è <strong>migliaia di commenti</strong> di testo informale: slang,
+          soprannomi, ironia a raffica, offese creative. Estrarne <strong>chi sta vincendo il festival secondo la voce
+            del popolo di internet</strong> richiede raccolta automatica, paginazione e analisi del sentiment in
+          italiano
+          colloquiale.
         </p>
         <p class="hero__body">
-          Southwind AI ha costruito una pipeline che ogni sera raccoglie le discussioni Reddit su tutti i brani in gara,
-          le analizza e genera automaticamente un <strong>report con previsioni, sentiment e insight</strong>, così che
-          tu possa capire chi sta dominando Sanremo secondo il pubblico online, non secondo le opinioni dei giornalisti.
+          Southwind AI ha costruito una pipeline che ogni giorno dopo una serata scarica l'intero megathread, lo
+          analizza
+          commento per
+          commento e genera automaticamente un <strong>report con previsioni, sentiment e insight</strong> — perché
+          capire chi sta dominando Sanremo secondo Reddit è molto più divertente che aspettare la giuria.
         </p>
 
         <div class="cta-group">
           <a href="{{LATEST_REPORT_URL}}" class="hero__cta hero__cta--primary" target="_blank"
-            rel="noopener noreferrer">Visualizza l'ultimo report &rarr;</a>
+            rel="noopener noreferrer">Ultima serata &rarr;</a>
           <a href="#compare" class="scroll-next" aria-label="Scorri alla sezione successiva">↓</a>
         </div>
       </div>
@@ -1046,8 +1059,8 @@
     <!-- ── Before / After Section ── -->
     <section id="compare" class="section compare">
       <div class="section__inner">
-        <p class="eyebrow">Prima e dopo</p>
-        <h2 class="compare__title">Da dati sparsi a previsioni chiare</h2>
+        <p class="eyebrow">Prima e dopo (con dati esempio)</p>
+        <h2 class="compare__title">Da 4.000 commenti caotici a previsioni leggibili</h2>
 
         <div class="compare__grid">
 
@@ -1055,7 +1068,7 @@
           <div class="compare__panel compare__panel--before">
             <div class="compare__label">
               <span class="compare__label-dot"></span>
-              Dataset grezzo — r/italy &amp; r/italyMusic
+              Dataset grezzo — megathread r/italy
             </div>
             <div class="raw-table-wrap">
               <table class="raw-table">
@@ -1065,81 +1078,82 @@
                     <th>brano</th>
                     <th>reddit_mentions</th>
                     <th>reddit_score</th>
-                    <th>reddit_comments</th>
+                    <th>reddit_total_comments</th>
                     <th>sentiment_score</th>
                     <th>sentiment_label</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
-                    <td>Annalisa</td>
-                    <td>Sinceramente</td>
-                    <td>14</td>
-                    <td>912</td>
-                    <td>237</td>
+                    <td>Arisa</td>
+                    <td>Magica favola</td>
+                    <td>312</td>
+                    <td>4841</td>
+                    <td>4203</td>
                     <td>0.44</td>
                     <td>positivo</td>
                   </tr>
                   <tr>
-                    <td>Angelina Mango</td>
-                    <td>La noia</td>
-                    <td>11</td>
-                    <td>703</td>
-                    <td>191</td>
+                    <td>Bambole di pezza</td>
+                    <td>Resta con me</td>
+                    <td>247</td>
+                    <td>3910</td>
+                    <td>4203</td>
                     <td>0.38</td>
                     <td>positivo</td>
                   </tr>
                   <tr>
-                    <td>Mahmood</td>
-                    <td>Tuta gold</td>
-                    <td>8</td>
-                    <td>541</td>
-                    <td>158</td>
+                    <td>Chiello</td>
+                    <td>Ti penso sempre</td>
+                    <td>183</td>
+                    <td>2774</td>
+                    <td>4203</td>
                     <td>0.22</td>
                     <td>positivo</td>
                   </tr>
                   <tr>
-                    <td>Giorgia</td>
-                    <td>Parole dette male</td>
-                    <td>6</td>
-                    <td>388</td>
-                    <td>104</td>
+                    <td>Dargen D'Amico</td>
+                    <td>Ai Ai</td>
+                    <td>121</td>
+                    <td>1902</td>
+                    <td>4203</td>
                     <td>0.09</td>
                     <td>neutro</td>
                   </tr>
                   <tr>
-                    <td>Blanco</td>
-                    <td>Brividi</td>
-                    <td>5</td>
-                    <td>214</td>
-                    <td>87</td>
+                    <td>Ditonellapiaga</td>
+                    <td>Che fastidio!</td>
+                    <td>98</td>
+                    <td>1044</td>
+                    <td>4203</td>
                     <td>-0.14</td>
                     <td>negativo</td>
                   </tr>
                   <tr>
-                    <td>Emma</td>
-                    <td>Apnea</td>
-                    <td>4</td>
-                    <td>178</td>
-                    <td>62</td>
+                    <td>Eddie Brock</td>
+                    <td>Avvoltoi</td>
+                    <td>74</td>
+                    <td>891</td>
+                    <td>4203</td>
                     <td>0.17</td>
                     <td>positivo</td>
                   </tr>
                   <tr>
-                    <td>Irama</td>
-                    <td>Tu no</td>
-                    <td>3</td>
-                    <td>142</td>
-                    <td>41</td>
+                    <td>Elettra Lamborghini</td>
+                    <td>Voilà</td>
+                    <td>53</td>
+                    <td>712</td>
+                    <td>4203</td>
                     <td>0.05</td>
                     <td>neutro</td>
                   </tr>
                 </tbody>
               </table>
             </div>
-            <div class="raw-table-footer">↓ 30 artisti totali &nbsp;·&nbsp; r/italy + r/italyMusic &nbsp;·&nbsp; nessuna analisi</div>
-            <p class="compare__caption">Dati grezzi: righe di testo, numeri senza contesto. Capire chi sta dominando
-              richiede analisi manuale di ogni metrica e del sentiment.</p>
+            <div class="raw-table-footer">↓ 30 artisti &nbsp;·&nbsp; 4.203 commenti &nbsp;·&nbsp; megathread r/italy
+              &nbsp;·&nbsp; nessuna analisi</div>
+            <p class="compare__caption">Dati grezzi: migliaia di commenti da classificare artista per artista, con tutto
+              lo slang, l'ironia e gli insulti creativi tipici di Reddit.</p>
           </div>
 
           <!-- RIGHT: report preview -->
@@ -1150,8 +1164,8 @@
             </div>
             <div class="report-preview">
               <div class="rp-header">
-                <p class="rp-date">Serata 1 - Festival di Sanremo 2026</p>
-                <p class="rp-title">Analisi discussioni Reddit</p>
+                <p class="rp-date">Serata 1 — Festival di Sanremo 2026</p>
+                <p class="rp-title">La voce del megathread: chi ha vinto la serata</p>
               </div>
               <div class="rp-kpis">
                 <div class="rp-kpi">
@@ -1159,57 +1173,57 @@
                   <p class="rp-kpi__value">30</p>
                 </div>
                 <div class="rp-kpi">
-                  <p class="rp-kpi__label">Menzioni totali</p>
-                  <p class="rp-kpi__value">127</p>
+                  <p class="rp-kpi__label">Commenti letti</p>
+                  <p class="rp-kpi__value">4.203</p>
                 </div>
                 <div class="rp-kpi">
-                  <p class="rp-kpi__label">Previsione vincitore</p>
-                  <p class="rp-kpi__value">Annalisa</p>
+                  <p class="rp-kpi__label">Favorita Reddit</p>
+                  <p class="rp-kpi__value">Arisa</p>
                 </div>
               </div>
-              <p class="rp-section-label">Top 4 per menzioni Reddit</p>
+              <p class="rp-section-label">Top 4 per menzioni nel megathread</p>
               <div class="rp-bars">
                 <div class="rp-bar-col">
                   <div class="rp-bar-chart-area">
-                    <span class="rp-bar-pct">14</span>
+                    <span class="rp-bar-pct">312</span>
                     <div class="rp-bar-fill" style="height:80px"></div>
                   </div>
                   <div class="rp-bar-base"></div>
-                  <span class="rp-bar-name">Annalisa</span>
+                  <span class="rp-bar-name">Arisa</span>
                 </div>
                 <div class="rp-bar-col">
                   <div class="rp-bar-chart-area">
-                    <span class="rp-bar-pct">11</span>
+                    <span class="rp-bar-pct">247</span>
                     <div class="rp-bar-fill" style="height:63px"></div>
                   </div>
                   <div class="rp-bar-base"></div>
-                  <span class="rp-bar-name">A. Mango</span>
+                  <span class="rp-bar-name">Bambole di pezza</span>
                 </div>
                 <div class="rp-bar-col">
                   <div class="rp-bar-chart-area">
-                    <span class="rp-bar-pct">8</span>
-                    <div class="rp-bar-fill" style="height:46px"></div>
+                    <span class="rp-bar-pct">183</span>
+                    <div class="rp-bar-fill" style="height:47px"></div>
                   </div>
                   <div class="rp-bar-base"></div>
-                  <span class="rp-bar-name">Mahmood</span>
+                  <span class="rp-bar-name">Chiello</span>
                 </div>
                 <div class="rp-bar-col">
                   <div class="rp-bar-chart-area">
-                    <span class="rp-bar-pct">6</span>
-                    <div class="rp-bar-fill" style="height:34px"></div>
+                    <span class="rp-bar-pct">121</span>
+                    <div class="rp-bar-fill" style="height:31px"></div>
                   </div>
                   <div class="rp-bar-base"></div>
-                  <span class="rp-bar-name">Giorgia</span>
+                  <span class="rp-bar-name">Dargen D'Amico</span>
                 </div>
               </div>
               <div class="rp-insight">
                 <p class="rp-insight__label">💬 Insight chiave</p>
-                <p class="rp-insight__text">Annalisa è l'artista più discussa su r/italy e r/italyMusic (14 thread,
-                  sentiment +0.44). Secondo il pubblico Reddit, è la favorita per la vittoria finale.</p>
+                <p class="rp-insight__text">Arisa domina il megathread con 312 menzioni e sentiment +0.44.
+                  Reddit ha già deciso: è lei la favorita, la giuria dovrà solo adeguarsi.</p>
               </div>
             </div>
             <p class="compare__caption">Report leggibile, con previsioni e sentiment analysis. Generato automaticamente
-              ogni sera in pochi minuti.</p>
+              ogni giorno dopo la serata in pochi minuti — senza leggere 4.000 commenti a mano.</p>
           </div>
 
         </div>
@@ -1223,24 +1237,28 @@
     <section id="difficulty" class="section difficulty">
       <div class="section__inner">
         <p class="eyebrow">Perché nessuno lo faceva</p>
-        <h2 class="section__title">I dati ci sono. Il problema è leggerli.</h2>
-        <p class="hero__body">Le discussioni Reddit su Sanremo sono pubbliche e accessibili, ma trasformare migliaia
-          di post e commenti in previsioni richiede di superare ostacoli tecnici che rendono l'analisi manuale
-          praticamente impossibile:</p>
+        <h2 class="section__title">Il megathread c'è. Leggerlo tutto è un altro discorso.</h2>
+        <p class="hero__body">Il megathread serale di r/italy è una miniera d'oro: migliaia di italiani che commentano
+          in tempo reale, senza filtri e con un'opinione su tutto. Trasformarlo in previsioni richiede però di
+          superare ostacoli che rendono l'analisi manuale praticamente impossibile (e molto poco salutare):</p>
         <ul class="difficulty__list">
-          <li><strong>Testo non strutturato:</strong> Post e commenti sono linguaggio naturale — slang, soprannomi,
-            ironia — impossibile da leggere con semplici query su un database.</li>
-          <li><strong>Sentiment in italiano:</strong> Rilevare se un commento è positivo o negativo in italiano
-            colloquiale richiede un lessico specifico e logica contestuale.</li>
-          <li><strong>Rate limiting Reddit:</strong> La Reddit JSON API pubblica ha limiti di richieste che richiedono
-            gestione intelligente dei delay, retry e deduplicazione dei post.</li>
-          <li><strong>Nessuna aggregazione per artista:</strong> Un artista può essere citato in decine di thread
-            diversi, con grafie differenti e soprannomi — trovare ogni menzione richiede matching intelligente.</li>
+          <li><strong>Migliaia di commenti nascosti:</strong> Reddit non ti mostra tutti i commenti insieme — li
+            carica a blocchi, uno dopo l'altro. Per leggere un megathread completo bisogna continuare a chiedere
+            "dammi altri commenti" decine di volte di fila. Non basta aprire il link e scorrere giù.</li>
+          <li><strong>Slang, ironia e insulti creativi:</strong> "Bravo" su Reddit può essere un complimento
+            sincero o puro sarcasmo — dipende dal contesto. L'italiano colloquiale del megathread non lo capisce
+            nessun dizionario: serve qualcosa in grado di cogliere il tono, non solo le parole.</li>
+          <li><strong>Reddit si stanca in fretta:</strong> Se fai troppe richieste di fila, Reddit smette di
+            risponderti — come un cameriere che dopo il decimo tavolo ti ignora. Bisogna sapere quando rallentare
+            e riprovare senza perdere il filo.</li>
+          <li><strong>Gli artisti hanno mille nomi:</strong> "Madame", "la Madame", "quella con i capelli" — le
+            stesse persone vengono chiamate in modi diversi da commento a commento. Trovare tutte le menzioni
+            senza confondere Ultimo con "l'ultimo che ha cantato" richiede una logica su misura.</li>
         </ul>
         <div class="difficulty__callout">
-          Southwind AI ha costruito una pipeline che risolve tutto questo <strong>in automatico, ogni sera, senza
-            intervento umano</strong>, generando un report con sentiment analysis, trend e previsioni in meno di
-          5 minuti.
+          Southwind AI ha costruito un sistema che risolve tutto questo <strong>in automatico, ogni sera, senza
+            che tu debba leggere nemmeno un commento</strong> — e genera un report con previsioni e analisi
+          in meno di 5 minuti.
         </div>
         <div class="section__scroll">
           <a href="#howto" class="scroll-next" aria-label="Scorri alla sezione successiva">↓</a>
@@ -1252,25 +1270,26 @@
     <section id="howto" class="section howto">
       <div class="howto__inner">
         <p class="eyebrow">Come funziona</p>
-        <h2 class="section__title">Tre passi. Zero intervento manuale.</h2>
+        <h2 class="section__title">Tre passi. Zero commenti da leggere.</h2>
         <ol class="steps">
           <li class="step">
             <span class="step__num">01</span>
             <div class="step__body">
-              <p class="step__title">Acquisizione automatica da Reddit</p>
-              <p class="step__desc">Ogni sera il sistema interroga la Reddit JSON API pubblica, raccoglie post e
-                commenti da <strong>r/italy</strong> e <strong>r/italyMusic</strong> relativi al festival, e per ogni
-                artista in gara calcola menzioni, upvote totali, volume di discussione e sentiment testuale in italiano —
-                gestendo rate limiting, retry e deduplicazione in modo trasparente.</p>
+              <p class="step__title">Scaricamento del megathread</p>
+              <p class="step__desc">Ogni sera il sistema apre il megathread di <strong>r/italy</strong> e legge
+                tutti i commenti — fino all'ultimo "ma davvero han fatto passare quello?". Non si ferma ai primi
+                che compaiono: li recupera tutti, uno dopo l'altro, con calma. Per ogni artista in gara conta
+                quante volte viene nominato, quanto piace (o non piace) a chi scrive, e con che tono.</p>
             </div>
           </li>
           <li class="step">
             <span class="step__num">02</span>
             <div class="step__body">
               <p class="step__title">Analisi AI</p>
-              <p class="step__desc">Southwind AI analizza il dataset aggregato, incrocia volume di discussione e
-                sentiment, identifica chi polarizza di più, chi ha il pubblico più entusiasta e chi rischia il flop.
-                Ogni report è unico e personalizzato, con insight specifici per ogni serata.</p>
+              <p class="step__desc">Southwind AI analizza il dataset, incrocia volume di discussione e sentiment,
+                identifica chi polarizza di più, chi ha il pubblico più entusiasta e chi invece sta collezionando
+                meme imbarazzanti. Ogni report è unico e personalizzato per la serata — niente copia-incolla
+                dal giorno prima.</p>
             </div>
           </li>
           <li class="step">
@@ -1278,7 +1297,8 @@
             <div class="step__body">
               <p class="step__title">Report pubblicato</p>
               <p class="step__desc">Southwind AI genera un report leggibile, con previsioni, trend e insight, e lo
-                pubblica automaticamente. Ogni sera, pronto da consultare subito dopo la serata.</p>
+                pubblica automaticamente — così il giorno dopo puoi condividerlo al posto di mandare screenshot
+                casuali del megathread ai tuoi amici.</p>
             </div>
           </li>
         </ol>
@@ -1293,8 +1313,8 @@
       <div class="archive__inner">
         <p class="eyebrow">Archivio</p>
         <h2>Report per serata</h2>
-        <p class="archive__subtitle">La pipeline è in esecuzione ogni sera del festival. Ogni report qui sotto è stato
-          generato automaticamente, senza intervento umano.</p>
+        <p class="archive__subtitle">Un report per ogni serata, generato automaticamente dopo che Reddit ha finito
+          di litigare. Nessun giornalista è stato consultato nel processo.</p>
         <ul class="report-list">
           {{REPORT_LIST}} </ul>
         <div class="section__scroll">
@@ -1307,9 +1327,10 @@
     <section id="cta" class="section dark-cta">
       <div class="section__inner">
         <p class="eyebrow">Southwind AI</p>
-        <h2 class="dark-cta__title">Vuoi analizzare i tuoi dati con l'AI?</h2>
-        <p class="dark-cta__body">Southwind AI trasforma qualsiasi dataset in report automatici, ricchi di insight e
-          previsioni. Raccontaci il tuo caso, ti risponderemo entro 24 ore.</p>
+        <h2 class="dark-cta__title">Hai dati da analizzare? Noi li leggiamo al posto tuo.</h2>
+        <p class="dark-cta__body">Southwind AI trasforma qualsiasi dataset in report automatici, ricchi di insight
+          e previsioni — non solo megathread di Reddit. Raccontaci il tuo caso, ti risponderemo entro 24 ore
+          (senza usare l'ironia).</p>
         <div class="cta-group cta-group--centered">
           <a href="https://www.southwind.ai/" target="_blank" rel="noopener noreferrer"
             class="hero__cta hero__cta--white">Scopri Southwind AI &rarr;</a>
@@ -1326,7 +1347,8 @@
         Uno studio del team di <a href="https://www.southwind.ai/" target="_blank" rel="noopener noreferrer">Southwind
           AI</a>
         <span class="sep">&middot;</span>
-        Dati: <a href="https://www.reddit.com/r/italy" target="_blank" rel="noopener noreferrer">r/italy</a> e <a href="https://www.reddit.com/r/italyMusic" target="_blank" rel="noopener noreferrer">r/italyMusic</a> via Reddit JSON API pubblica
+        Dati: megathread <a href="https://www.reddit.com/r/italy" target="_blank" rel="noopener noreferrer">r/italy</a>
+        via Reddit JSON API pubblica
         <span class="sep">&middot;</span>
         Per qualsiasi informazione: <a href="mailto:edoardo.spada@southwind.ai">edoardo.spada@southwind.ai</a>
       </p>
@@ -1336,7 +1358,8 @@
   <!-- Mobile hint toast -->
   <div id="mobile-hint" role="status" aria-live="polite" style="display:none">
     <span id="mobile-hint__text">
-      🎵 I report sono ottimizzati per desktop — per la migliore esperienza aprili da computer.
+      🎵 I report sono ottimizzati per desktop — per la migliore esperienza aprili da computer (o rimpicciolisci lo
+      schermo, non ti giudichiamo).
     </span>
     <button id="mobile-hint__close" aria-label="Chiudi suggerimento">✕</button>
   </div>

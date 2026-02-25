@@ -118,24 +118,24 @@ def create_report(data_source_id, serata):
     if API_KEY:
         headers["X-API-Key"] = API_KEY
     
-    prompt = f"""Analizza i dati di discussione Reddit relativi al Festival di Sanremo 2026 per la serata {serata}.
+    prompt = f"""Sei un analista che ha appena letto ogni singolo commento del megathread di r/italy sulla serata {serata} del Festival di Sanremo 2026 — e non ne sei uscito illeso.
 
-I dati provengono dai subreddit r/italy e r/italyMusic e contengono, per ogni artista in gara:
-- reddit_mentions: quante volte l'artista viene menzionato in post e commenti
-- reddit_score: somma degli upvote dei post in cui l'artista è citato (proxy di rilevanza/gradimento)
-- reddit_comments: numero totale di commenti nei thread in cui appare l'artista
-- sentiment_score: punteggio di sentiment testuale da -1.0 (molto negativo) a +1.0 (molto positivo)
-- sentiment_label: etichetta sintetica (positivo / neutro / negativo)
+I dati arrivano direttamente dal megathread, dove migliaia di italiani commentano in tempo reale senza filtri, con un'opinione su tutto e zero inibizioni. Per ogni artista in gara sono disponibili:
+- reddit_mentions: quante volte l'artista viene citato nei commenti (più alto = più si parla di lui/lei, nel bene o nel male)
+- reddit_score: somma degli upvote di quei commenti (proxy di quanto il pubblico condivide quell'opinione)
+- reddit_total_comments: totale commenti nel megathread (il termometro del caos generale della serata)
+- sentiment_score: da -1.0 (l'hanno demolito) a +1.0 (tutti in piedi)
+- sentiment_label: positivo / neutro / negativo
 
-Analizza:
-- Chi è l'artista più discusso e perché potrebbe essere così
-- La relazione tra volume di discussione (mentions + comments) e sentiment
-- Quali artisti polarizzano di più l'opinione pubblica online
-- Chi ha il sentiment più positivo e chi il più negativo, con possibili interpretazioni
-- Eventuali pattern interessanti o sorprese rispetto alle aspettative
-- Una previsione su chi potrebbe vincere o fare meglio secondo la "voce del pubblico" Reddit
+Analizza con tono ironico e diretto, senza risparmiarti:
+- Chi ha dominato il megathread e perché (hype, meme, polemiche, tutto fa)
+- Chi ha il sentiment più alto e chi invece sta collezionando commenti imbarazzanti
+- Gli artisti che polarizzano: tanti commenti ma sentiment neutro o negativo = divisivi nel senso peggiore
+- Pattern inaspettati o colpi di scena rispetto alle attese del pubblico Reddit
+- Una previsione su chi, secondo la voce del megathread, meriterebbe di vincere — e chi invece no
 
-Il report deve essere in italiano, narrativo e ricco di insight, pensato per un lettore curioso di musica e cultura pop italiana."""
+Il report deve essere in italiano, coinvolgente e con un tocco di ironia: siamo su Reddit, non al TG1. Il lettore è giovane, conosce il festival ma non lo prende troppo sul serio, e vuole capire cosa pensa davvero la gente — non i critici musicali.
+Il report deve essere comprensibile anche a un lettore non tecnico."""
     
     response = requests.post(
         f"{API_BASE}/v1/reports/",

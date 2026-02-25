@@ -1,10 +1,14 @@
 """
-Raccoglie dati da Reddit (r/italy, r/italyMusic) per ogni artista in gara a Sanremo.
+Raccoglie dati dal megathread serale di r/italy dedicato al Festival di Sanremo 2026.
 Utilizza la Reddit JSON API pubblica (nessuna autenticazione richiesta).
+
+La comunità italiana di Reddit discute ogni serata in un unico megathread con migliaia
+di commenti. Questo script scarica tutti i commenti del megathread (con paginazione)
+e calcola per ogni artista: menzioni, score, sentiment e commenti di esempio.
 
 Output CSV:
   artista, brano, reddit_mentions, reddit_score, reddit_comments,
-  sentiment_score, sentiment_label
+  sentiment_score, sentiment_label, top_comments
 """
 import csv
 import os
@@ -20,15 +24,22 @@ from contestants import CONTESTANTS
 
 load_dotenv()
 
-# ── Reddit public API ─────────────────────────────────────────────────────────
-REDDIT_BASE  = "https://www.reddit.com"
-SUBREDDITS   = ["SanremoFestival", "italy", "Festival_di_Sanremo"]
-USER_AGENT   = "StudioSanremo/1.0 (data-analysis project)"
+# ── Megathread URLs per serata ────────────────────────────────────────────────
+# Vengono aggiunti man mano che le serate si svolgono.
+# Possono essere sovrascritti con la variabile d'ambiente MEGATHREAD_URL.
+MEGATHREAD_URLS: dict[int, str] = {
+    1: "https://www.reddit.com/r/italy/comments/1rdpfj8/megathread_76_festival_di_sanremo_prima_serata/",
+    # 2: "https://www.reddit.com/r/italy/comments/...",
+    # 3: "https://www.reddit.com/r/italy/comments/...",
+    # 4: "https://www.reddit.com/r/italy/comments/...",
+    # 5: "https://www.reddit.com/r/italy/comments/...",
+}
 
-# How far back to look: "day" | "week" | "month" | "year" | "all"
-TIME_FILTER  = "month"
-MAX_POSTS    = 100          # posts per subreddit per query
-REQUEST_DELAY = 1.2         # seconds between Reddit API calls
+# ── Reddit public API ─────────────────────────────────────────────────────────
+REDDIT_BASE   = "https://www.reddit.com"
+USER_AGENT    = "StudioSanremo/1.0"
+REQUEST_DELAY = 1.2     # secondi tra chiamate API
+MORE_BATCH    = 100     # commenti per chiamata morechildren
 
 
 # ── Italian sentiment lexicon ─────────────────────────────────────────────────
@@ -98,43 +109,83 @@ def _reddit_get(url: str, params: dict | None = None) -> dict | list | None:
         return None
 
 
-# ── Reddit helpers ────────────────────────────────────────────────────────────
-def _search_subreddit(subreddit: str, query: str) -> list[dict]:
-    """Return a list of post dicts from a subreddit search."""
-    url = f"{REDDIT_BASE}/r/{subreddit}/search.json"
-    params = {
-        "q": query,
-        "sort": "top",
-        "t": TIME_FILTER,
-        "limit": MAX_POSTS,
-        "restrict_sr": "true",
-    }
-    data = _reddit_get(url, params)
-    if not data:
-        return []
-    children = data.get("data", {}).get("children", [])
-    return [c["data"] for c in children if c.get("kind") == "t3"]
+# ── Megathread helpers ─────────────────────────────────────────────────────────
+def _parse_megathread_url(url: str) -> tuple[str, str]:
+    """Estrae (subreddit, post_id) da un URL di thread Reddit."""
+    m = re.search(r"/r/(\w+)/comments/(\w+)", url)
+    if not m:
+        raise ValueError(f"URL Reddit non riconoscibile: {url}")
+    return m.group(1), m.group(2)
 
 
-def _fetch_comments(subreddit: str, post_id: str, limit: int = 60) -> list[str]:
-    """Return the body text of top-level comments for a post."""
+def _extract_comment_nodes(
+    children: list,
+    comments: list[dict],
+    more_ids: list[str],
+) -> None:
+    """Ricorsivamente estrae commenti e raccoglie ID 'more' da una lista di nodi."""
+    for child in children:
+        kind = child.get("kind")
+        if kind == "t1":
+            data = child["data"]
+            body = data.get("body", "")
+            if body and body not in ("[deleted]", "[removed]"):
+                comments.append({"body": body, "score": data.get("score", 0)})
+            replies = data.get("replies", "")
+            if isinstance(replies, dict):
+                _extract_comment_nodes(
+                    replies.get("data", {}).get("children", []),
+                    comments,
+                    more_ids,
+                )
+        elif kind == "more":
+            more_ids.extend(child["data"].get("children", []))
+
+
+def _fetch_all_megathread_comments(subreddit: str, post_id: str) -> tuple[dict, list[dict]]:
+    """
+    Scarica il post del megathread e TUTTI i suoi commenti, seguendo i link 'more'.
+    Restituisce (post_dict, lista di {"body": …, "score": …}).
+    """
     url = f"{REDDIT_BASE}/r/{subreddit}/comments/{post_id}.json"
-    params = {"limit": limit, "depth": 1, "sort": "top"}
-    data = _reddit_get(url, params)
+    data = _reddit_get(url, {"limit": 500, "depth": 10, "sort": "confidence"})
     if not data or not isinstance(data, list) or len(data) < 2:
-        return []
-    children = data[1].get("data", {}).get("children", [])
-    return [
-        c["data"]["body"]
-        for c in children
-        if c.get("kind") == "t1"
-        and c["data"].get("body") not in (None, "[deleted]", "[removed]")
-    ]
+        return {}, []
+
+    post = data[0]["data"]["children"][0]["data"]
+
+    comments: list[dict] = []
+    more_ids: list[str] = []
+    _extract_comment_nodes(data[1]["data"]["children"], comments, more_ids)
+
+    print(f"  Commenti iniziali: {len(comments)}  — ID 'more' da espandere: {len(more_ids)}")
+
+    link_id = f"t3_{post_id}"
+    for i in range(0, len(more_ids), MORE_BATCH):
+        batch = more_ids[i : i + MORE_BATCH]
+        more_data = _reddit_get(
+            f"{REDDIT_BASE}/api/morechildren.json",
+            {
+                "api_type": "json",
+                "link_id": link_id,
+                "children": ",".join(batch),
+                "sort": "confidence",
+            },
+        )
+        if not more_data:
+            continue
+        things = more_data.get("json", {}).get("data", {}).get("things", [])
+        extra_more: list[str] = []
+        _extract_comment_nodes(things, comments, extra_more)
+        print(f"    …{len(comments)} commenti scaricati (batch {i // MORE_BATCH + 1})")
+
+    print(f"  ✓ Totale commenti nel megathread: {len(comments)}")
+    return post, comments
 
 
 # ── Sentiment ─────────────────────────────────────────────────────────────────
 def _compute_sentiment(texts: list[str]) -> float:
-    """Return a score in [-1.0, +1.0] using the Italian lexicon above."""
+    """Restituisce un punteggio in [-1.0, +1.0] usando il lessico italiano."""
     pos = neg = 0
     for text in texts:
         for word in re.findall(r"\b\w+\b", text.lower()):
@@ -156,102 +207,76 @@ def _sentiment_label(score: float) -> str:
 
 # ── Artist matching ───────────────────────────────────────────────────────────
 def _artist_in_text(artist: str, text: str) -> bool:
-    """True if the artist name (or a significant part of it) appears in text."""
+    """True se il nome dell'artista (o una parte significativa) appare nel testo."""
     if not text:
         return False
     t = text.lower()
     a = artist.lower()
     if a in t:
         return True
-    # Try each word part (≥ 4 chars) — catches "Annalisa", "Mahmood", …
     for part in a.split():
         if len(part) >= 4 and part in t:
             return True
     return False
 
 
-# ── Data collection ───────────────────────────────────────────────────────────
-def _collect_all_posts() -> list[tuple[dict, list[str]]]:
-    """
-    Fetch all Sanremo-related posts from every configured subreddit,
-    then fetch their top-level comments.
-    Returns: list of (post_dict, [comment_text, …])
-    """
-    queries = ["sanremo 2026", "festival sanremo", "sanremo"]
-
-    seen_ids: set[str] = set()
-    subreddit_of: dict[str, str] = {}   # post_id → subreddit (for comment fetching)
-    raw_posts: list[dict] = []
-
-    for subreddit in SUBREDDITS:
-        for query in queries:
-            print(f"  Searching r/{subreddit}: '{query}'…")
-            for post in _search_subreddit(subreddit, query):
-                pid = post.get("id")
-                if pid and pid not in seen_ids:
-                    seen_ids.add(pid)
-                    subreddit_of[pid] = subreddit
-                    raw_posts.append(post)
-
-    print(f"  Found {len(raw_posts)} unique posts across {SUBREDDITS}")
-
-    print("  Fetching comments…")
-    result: list[tuple[dict, list[str]]] = []
-    for i, post in enumerate(raw_posts, 1):
-        pid = post.get("id", "")
-        sub = subreddit_of.get(pid, SUBREDDITS[0])
-        comments = _fetch_comments(sub, pid) if post.get("num_comments", 0) > 0 else []
-        result.append((post, comments))
-        if i % 10 == 0:
-            print(f"    …{i}/{len(raw_posts)} posts processed")
-
-    print(f"  ✓ Corpus ready: {len(result)} posts")
-    return result
-
-
+# ── Metriche per artista ───────────────────────────────────────────────────────
 def _metrics_for_artist(
     artist: str,
-    corpus: list[tuple[dict, list[str]]],
-) -> tuple[int, int, int, float, str]:
+    all_comments: list[dict],
+) -> tuple[int, int, float, str, str]:
     """
-    Scan the pre-fetched corpus and return:
-      (mentions, total_score, total_comments, sentiment_score, sentiment_label)
+    Scansiona i commenti del megathread e restituisce:
+      (mentions, total_score, sentiment_score, sentiment_label, top_comments)
+
+    - mentions: numero di commenti che menzionano l'artista
+    - total_score: somma degli upvote di quei commenti
+    - top_comments: stringa ' || '-separata dei 3 commenti più votati
     """
-    mentions = total_score = total_comments = 0
-    relevant_texts: list[str] = []
+    matching: list[dict] = [
+        c for c in all_comments if _artist_in_text(artist, c["body"])
+    ]
 
-    for post, comment_texts in corpus:
-        post_text = (post.get("title", "") + " " + post.get("selftext", "")).strip()
-        in_post   = _artist_in_text(artist, post_text)
-        in_comments = any(_artist_in_text(artist, c) for c in comment_texts)
+    mentions = len(matching)
+    total_score = sum(c["score"] for c in matching)
+    texts = [c["body"] for c in matching]
 
-        if in_post or in_comments:
-            mentions        += 1
-            total_score     += post.get("score", 0)
-            total_comments  += post.get("num_comments", 0)
-
-            if in_post:
-                relevant_texts.append(post_text)
-            relevant_texts.extend(c for c in comment_texts if _artist_in_text(artist, c))
-
-    score = _compute_sentiment(relevant_texts)
+    score = _compute_sentiment(texts)
     label = _sentiment_label(score)
-    return mentions, total_score, total_comments, score, label
+
+    top3_bodies = sorted(matching, key=lambda c: c["score"], reverse=True)[:3]
+    top_comments = " || ".join(c["body"] for c in top3_bodies)
+
+    return mentions, total_score, score, label, top_comments
 
 
 # ── Public entry point ────────────────────────────────────────────────────────
 def fetch_data(serata: int) -> str:
     """
-    Fetch Reddit data for all contestants and write a CSV to datasets/.
-    Returns the relative path to the CSV (for use by pipeline.py).
+    Scarica i commenti del megathread di r/italy per la serata indicata
+    e scrive un CSV in datasets/.
+    Restituisce il percorso relativo del CSV (per pipeline.py).
     """
+    # Determina l'URL del megathread: env var ha priorità sulla mappa built-in
+    megathread_url = os.getenv("MEGATHREAD_URL") or MEGATHREAD_URLS.get(serata)
+    if not megathread_url:
+        print(
+            f"Errore: URL del megathread per la serata {serata} non configurato.\n"
+            f"Impostare MEGATHREAD_URL nell'ambiente oppure aggiungere l'URL a MEGATHREAD_URLS in fetch.py."
+        )
+        sys.exit(1)
+
+    subreddit, post_id = _parse_megathread_url(megathread_url)
+
     print(f"\n{'='*60}")
-    print(f"Sanremo 2026 — Serata {serata} | Reddit data collection")
-    print(f"Subreddits : {', '.join('r/'+s for s in SUBREDDITS)}")
+    print(f"Sanremo 2026 — Serata {serata} | Reddit megathread")
+    print(f"URL : {megathread_url}")
     print(f"Contestants: {len(CONTESTANTS)}")
     print(f"{'='*60}\n")
 
-    corpus = _collect_all_posts()
+    print("Scaricamento commenti del megathread…")
+    post, all_comments = _fetch_all_megathread_comments(subreddit, post_id)
+    total_thread_comments = len(all_comments)
 
     project_root  = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
     datasets_dir  = os.path.join(project_root, "datasets")
@@ -264,32 +289,38 @@ def fetch_data(serata: int) -> str:
     rows = []
     for i, (artist, song) in enumerate(CONTESTANTS, 1):
         print(f"[{i:02d}/{len(CONTESTANTS)}] {artist} — {song}")
-        mentions, score, comments, sent_score, sent_lbl = _metrics_for_artist(artist, corpus)
-        print(f"       mentions={mentions}  score={score}  comments={comments}  sentiment={sent_lbl}({sent_score})")
+        mentions, score, sent_score, sent_lbl, top_comments = _metrics_for_artist(
+            artist, all_comments
+        )
+        print(
+            f"       mentions={mentions}  score={score}"
+            f"  sentiment={sent_lbl}({sent_score})"
+        )
         rows.append({
-            "artista":          artist,
-            "brano":            song,
-            "reddit_mentions":  mentions,
-            "reddit_score":     score,
-            "reddit_comments":  comments,
-            "sentiment_score":  sent_score,
-            "sentiment_label":  sent_lbl,
+            "artista":                artist,
+            "brano":                  song,
+            "reddit_mentions":        mentions,
+            "reddit_score":           score,
+            "reddit_total_comments":  total_thread_comments,
+            "sentiment_score":        sent_score,
+            "sentiment_label":        sent_lbl,
+            "top_comments":           top_comments,
         })
 
-    # Sort by discussion volume (mentions desc, then score desc)
     rows.sort(key=lambda r: (r["reddit_mentions"], r["reddit_score"]), reverse=True)
 
     fieldnames = [
         "artista", "brano",
-        "reddit_mentions", "reddit_score", "reddit_comments",
+        "reddit_mentions", "reddit_score", "reddit_total_comments",
         "sentiment_score", "sentiment_label",
+        "top_comments",
     ]
     with open(output_file, "w", newline="", encoding="utf-8") as f:
         writer = csv.DictWriter(f, fieldnames=fieldnames)
         writer.writeheader()
         writer.writerows(rows)
 
-    print(f"\n✓ Saved {len(rows)} records → {output_file}")
+    print(f"\n✓ Salvati {len(rows)} record → {output_file}")
     return output_relative
 
 

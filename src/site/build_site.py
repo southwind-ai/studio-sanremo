@@ -153,15 +153,19 @@ def generate_html(reports_with_urls):
     reports_with_urls.sort(key=lambda x: x['time'], reverse=True)
     
     # Generate report list items
+    # Reports are sorted newest-first; serata_num = total count down to 1
+    total = len([r for r in reports_with_urls if r['embed_url']])
     report_list_html = ""
+    serata_counter = total
     for report in reports_with_urls:
         if report['embed_url']:
-            formatted_date = format_italian_date(report['time'])
+            # formatted_date = format_italian_date(report['time'])
             report_list_html += f"""            <li class="report-list__item">
-              <span class="report-list__date">{formatted_date}</span>
+              <span class="report-list__name">Serata {serata_counter}</span>
               <a href="{report['embed_url']}" class="report-list__link" target="_blank" rel="noopener noreferrer">Leggi il report &rarr;</a>
             </li>
 """
+            serata_counter -= 1
     
     if not report_list_html:
         report_list_html = '            <li class="report-list__item"><span class="report-list__date">Nessun report disponibile</span></li>\n'
